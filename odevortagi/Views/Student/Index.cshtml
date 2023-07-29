@@ -1,0 +1,72 @@
+@model List<Student>
+<style>
+   .column {
+    border-color: white;
+    border-style: solid;
+    position: relative;
+    margin-top: 2em;
+    background-color: rgb(240, 246, 255);
+  }
+
+  .img {
+    position: relative;
+    height: 5em
+  }
+
+  .columg {
+    position: relative;
+    margin-top: 2em;
+    text-align: center;
+
+  }
+    .colum {
+    border-color: white;
+    border-style: solid;
+    position: relative;
+    margin-top: 2em;
+    background-color: rgb(233, 233, 233);
+  }
+  
+</style>
+<div id ="Title"class="container">
+  <div class="row">
+    <div class="col-2 colum">
+      Img
+    </div>
+    <div class="col-4 colum">
+      Title
+    </div>
+    <div class="col colum">
+      Price
+    </div>
+    <div class="col colum">
+      Majority
+    </div>
+    <div class="col colum">
+      Date
+    </div>
+  </div>
+</div>
+@foreach(var item in Model){
+ <a href="">
+    <div class="container">
+      <div class="row">
+        <div class="col-2 columg">
+          <img class="img" src="@item.ImageUrl" alt="img">
+        </div>
+        <div class="col-4 column">
+           @item.Name
+        </div>
+        <div class="col column">
+          @item.Price TL
+        </div>
+        <div class="col column">
+          @item.Majority
+        </div>
+        <div class="col column">
+          @item.Date
+        </div>
+      </div>
+    </div>
+  </a>
+}

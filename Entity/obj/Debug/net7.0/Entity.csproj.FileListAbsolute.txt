@@ -1,0 +1,14 @@
+C:\Users\burha\OneDrive\Masaüstü\coder\ÖdevOrtağım\Entity\bin\Debug\net7.0\Entity.deps.json
+C:\Users\burha\OneDrive\Masaüstü\coder\ÖdevOrtağım\Entity\bin\Debug\net7.0\Entity.dll
+C:\Users\burha\OneDrive\Masaüstü\coder\ÖdevOrtağım\Entity\bin\Debug\net7.0\Entity.pdb
+C:\Users\burha\OneDrive\Masaüstü\coder\ÖdevOrtağım\Entity\obj\Debug\net7.0\Entity.csproj.AssemblyReference.cache
+C:\Users\burha\OneDrive\Masaüstü\coder\ÖdevOrtağım\Entity\obj\Debug\net7.0\Entity.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\burha\OneDrive\Masaüstü\coder\ÖdevOrtağım\Entity\obj\Debug\net7.0\Entity.AssemblyInfoInputs.cache
+C:\Users\burha\OneDrive\Masaüstü\coder\ÖdevOrtağım\Entity\obj\Debug\net7.0\Entity.AssemblyInfo.cs
+C:\Users\burha\OneDrive\Masaüstü\coder\ÖdevOrtağım\Entity\obj\Debug\net7.0\Entity.csproj.CoreCompileInputs.cache
+C:\Users\burha\OneDrive\Masaüstü\coder\ÖdevOrtağım\Entity\obj\Debug\net7.0\Entity.dll
+C:\Users\burha\OneDrive\Masaüstü\coder\ÖdevOrtağım\Entity\obj\Debug\net7.0\refint\Entity.dll
+C:\Users\burha\OneDrive\Masaüstü\coder\ÖdevOrtağım\Entity\obj\Debug\net7.0\Entity.pdb
+C:\Users\burha\OneDrive\Masaüstü\coder\ÖdevOrtağım\Entity\obj\Debug\net7.0\ref\Entity.dll
+C:\Users\burha\OneDrive\Masaüstü\coder\ÖdevOrtağım\Entity\bin\Debug\net7.0\Entity.runtimeconfig.json
+C:\Users\burha\OneDrive\Masaüstü\coder\ÖdevOrtağım\Entity\obj\Debug\net7.0\Entity.genruntimeconfig.cache

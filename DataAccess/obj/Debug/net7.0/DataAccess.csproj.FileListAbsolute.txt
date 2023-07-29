@@ -1,0 +1,17 @@
+C:\Users\burha\OneDrive\Masaüstü\coder\ÖdevOrtağım\DataAccess\bin\Debug\net7.0\DataAccess.deps.json
+C:\Users\burha\OneDrive\Masaüstü\coder\ÖdevOrtağım\DataAccess\bin\Debug\net7.0\DataAccess.dll
+C:\Users\burha\OneDrive\Masaüstü\coder\ÖdevOrtağım\DataAccess\bin\Debug\net7.0\DataAccess.pdb
+C:\Users\burha\OneDrive\Masaüstü\coder\ÖdevOrtağım\DataAccess\bin\Debug\net7.0\Entity.dll
+C:\Users\burha\OneDrive\Masaüstü\coder\ÖdevOrtağım\DataAccess\bin\Debug\net7.0\Entity.pdb
+C:\Users\burha\OneDrive\Masaüstü\coder\ÖdevOrtağım\DataAccess\obj\Debug\net7.0\DataAccess.csproj.AssemblyReference.cache
+C:\Users\burha\OneDrive\Masaüstü\coder\ÖdevOrtağım\DataAccess\obj\Debug\net7.0\DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\burha\OneDrive\Masaüstü\coder\ÖdevOrtağım\DataAccess\obj\Debug\net7.0\DataAccess.AssemblyInfoInputs.cache
+C:\Users\burha\OneDrive\Masaüstü\coder\ÖdevOrtağım\DataAccess\obj\Debug\net7.0\DataAccess.AssemblyInfo.cs
+C:\Users\burha\OneDrive\Masaüstü\coder\ÖdevOrtağım\DataAccess\obj\Debug\net7.0\DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\burha\OneDrive\Masaüstü\coder\ÖdevOrtağım\DataAccess\obj\Debug\net7.0\DataAccess.csproj.CopyComplete
+C:\Users\burha\OneDrive\Masaüstü\coder\ÖdevOrtağım\DataAccess\obj\Debug\net7.0\DataAccess.dll
+C:\Users\burha\OneDrive\Masaüstü\coder\ÖdevOrtağım\DataAccess\obj\Debug\net7.0\refint\DataAccess.dll
+C:\Users\burha\OneDrive\Masaüstü\coder\ÖdevOrtağım\DataAccess\obj\Debug\net7.0\DataAccess.pdb
+C:\Users\burha\OneDrive\Masaüstü\coder\ÖdevOrtağım\DataAccess\obj\Debug\net7.0\ref\DataAccess.dll
+C:\Users\burha\OneDrive\Masaüstü\coder\ÖdevOrtağım\DataAccess\bin\Debug\net7.0\DataAccess.runtimeconfig.json
+C:\Users\burha\OneDrive\Masaüstü\coder\ÖdevOrtağım\DataAccess\obj\Debug\net7.0\DataAccess.genruntimeconfig.cache
