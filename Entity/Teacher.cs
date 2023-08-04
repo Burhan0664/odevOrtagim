@@ -10,5 +10,6 @@ namespace Entity
         public string? ImageUrl { get; set; }
         public decimal Price { get; set; }
         public DateTime Date { get; set; }=DateTime.Now;
+        public string? Gender { get; set; }
     }
 }

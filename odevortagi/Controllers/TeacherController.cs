@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using Abstract;
 using Concrete;
 using Microsoft.VisualBasic;
+using System.Net.Http.Headers;
 
 namespace Controllers
 {
@@ -19,20 +20,31 @@ namespace Controllers
         
         return View(_teacherRepository.GetAll());
     }
-       [HttpGet]
-        public IActionResult Index(string? explore)
+        [HttpGet]
+        public IActionResult Index(string explore, int min_price, int max_price, DateTime Date, string Gender)
         {
-            if (explore!=null&&_teacherRepository.GetByName(explore)!=null)
+            if (!string.IsNullOrEmpty(explore))
             {
-
-                var teacher = _teacherRepository.GetByName(explore);
-                return View(new List<Teacher> { teacher });
+                var teacherByName = _teacherRepository.GetByName(explore);
+                if (teacherByName.Count > 0)
+                {
+                    return View(teacherByName);
+                }
+                else{
+                    return View("notFound");
+                }
             }
-            else
+
+            var teachersByFilter = _teacherRepository.GetByFilter(min_price, max_price, Gender);
+            if (teachersByFilter.Count >0)
             {
-                return View(_teacherRepository.GetAll());   
+                return View(teachersByFilter);  
+            }
+            else{
+                return View(_teacherRepository.GetAll());
             }
         }
+
 
     }
 }

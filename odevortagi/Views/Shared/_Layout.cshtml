@@ -1,5 +1,26 @@
 ﻿<!DOCTYPE html>
 <html>
+<style>
+    .colums {
+        border-style: solid;
+        border-color: white;
+        background-color: rgb(244, 244, 244);
+        height: 8em;
+
+    }
+
+    .numericInput {
+        border: 1px solid #c0c0c0;
+        height: 3em;
+        width: 7em;
+        font-size: 12px;
+        line-height: 2px;
+        padding: 5px;
+        border-radius: 2px;
+        -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+        box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+    }
+</style>
 
 <head>
     <title>Ödev Ortağım</title>
@@ -51,27 +72,15 @@
                     <a class="nav-link text-white" href="#">Sign-up</a>
 
 
-                    <input name ="explore" class="form-control mr-sm-2" type="search" placeholder="Kelime veya ilan no adı giriniz" aria-label="Search">
+                    <input name="explore" class="form-control mr-sm-2" type="search"
+                        placeholder="Kelime veya ilan no adı giriniz" aria-label="Search">
                     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
                 </form>
             </div>
         </nav>
     </header>
-    <div class="container-fluid ">
-        <div class="row">
-          <div class="col-md-4">
-            <ul class="list-group ">
-              <li class="list-group-item bg-success">Home</li>
-              <a asp-action="Index" asp-controller="Teacher"><li class="list-group-item list-group-item-action m-lg-1 " >Hocalar</li></a>
-              <a asp-controller="Student" asp-action="Index"><li class="list-group-item list-group-item-action m-lg-1 " asp-controller="Student" asp-action="Index" >Ödevler</li></a>
-            </ul>
-            <img class="my-5" src="https://www.ucarecdn.com/e9acae8c-c140-43e5-8084-d9aecf189f94/-/resize/700x/" style="width: 30em;" alt="img"y>
-          </div>
-          <div class="col-md-7 ">
-            @RenderBody()
-          </div>
-        </div>
-      </div>
-    </body>
+    @RenderBody()
+        
+</body>
 
 </html>

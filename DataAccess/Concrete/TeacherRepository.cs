@@ -32,6 +32,19 @@ namespace Concrete
             }
         }
 
+       
+
+        public List<Teacher> GetByFilter(int min_price, int max_price, string Gender)
+        {
+              using (ShopContext db =new ShopContext())
+            {
+                var products=db.Teachers.Where(p => p.Gender == Gender && p.Price >= min_price && p.Price <= max_price).ToList()    ;
+                return products;
+            }
+        }
+
+        
+
         public Teacher GetById(int Id)
         {
             using (var db = new ShopContext())
@@ -41,13 +54,15 @@ namespace Concrete
             }
         }
 
-        public Teacher GetByName(string Title)
+        public List<Teacher> GetByName(string Title)
         {
             using (var db = new ShopContext())
             {
-                var products = db.Teachers.Where(p => p.Name.ToLower().Contains(Title.ToLower())).FirstOrDefault();
+                var products = db.Teachers.Where(p => p.Name.ToLower().Contains(Title.ToLower())).ToList();
                 return products;
             }
         }
+
+        
     }
 }

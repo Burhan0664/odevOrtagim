@@ -9,6 +9,8 @@ namespace Abstract
         TEntity GetById(int Id);
 
         List<TEntity> GetAll();
-        TEntity GetByName(string Title);
+        List<TEntity> GetByName(string Title);
+        List<TEntity> GetByFilter(int min_price,int max_price,string Gender);
+       
     }
 }

@@ -24,21 +24,30 @@ namespace Controllers
 
         }
         [HttpGet]
-        public IActionResult Index(string? explore)
+        public IActionResult Index(string explore, int min_price, int max_price, int Date, string Gender)
         {
-            if (explore!=null&&_studentRepository.GetByName(explore)!=null)
+            if (!string.IsNullOrEmpty(explore))
             {
+                var studentsByName = _studentRepository.GetByName(explore);
+                if (studentsByName.Count > 0)
+                {
+                    return View(studentsByName);
+                }
+                else{
+                    return View("notFound");
+                }
+            }
 
-                var student = _studentRepository.GetByName(explore);
-                return View(new List<Student> { student });
-            }
-            else
+            var studentsByFilter = _studentRepository.GetByFilter(min_price, max_price, Gender);
+            if (studentsByFilter.Count > 0)
             {
-                return View(_studentRepository.GetAll());   
+                return View(studentsByFilter);
             }
+
+            return View(_studentRepository.GetAll());
         }
-               
-        
+
+
 
     }
 }

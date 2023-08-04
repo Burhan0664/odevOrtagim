@@ -1,0 +1,53 @@
+@model List<Teacher>
+
+<style>
+    .column {
+        border-color: white;
+        border-style: solid;
+        position: relative;
+        margin-top: 2em;
+        background-color: rgb(240, 246, 255);
+    }
+
+    .img {
+        position: relative;
+        height: 5em;
+    }
+
+    .columg {
+        position: relative;
+        margin-top: 2em;
+        text-align: center;
+    }
+
+    .colum {
+        border-color: white;
+        border-style: solid;
+        position: relative;
+        margin-top: 2em;
+        background-color: rgb(233, 233, 233);
+    }
+</style>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-4">
+            <ul class="list-group">
+                <a asp-controller="Home" asp-action="Index">
+                    <li class="list-group-item list-group-item-action m-lg-1">Home</li>
+                </a>
+                <a asp-action="Index" asp-controller="Teacher">
+                    <li class="list-group-item list-group-item-action m-lg-1">Teachers</li>
+                </a>
+                <a asp-controller="Student" asp-action="Index">
+                    <li class="list-group-item list-group-item-action m-lg-1">Exams</li>
+                </a>
+            </ul>
+            <img class="mt-5" src="https://www.ucarecdn.com/e9acae8c-c140-43e5-8084-d9aecf189f94/-/resize/700x/"
+                style="width: 30em;" alt="img">
+        </div>
+            <div class="col-7">
+                <h1 class="m-5 text-danger bg-warning text-center">I'm Sorry Teacher Doesn't Exist</h1>
+            </div>
+        </div>
+    </div>

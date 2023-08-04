@@ -27,15 +27,22 @@ namespace Concrete
            return _studentRepository.GetAll();
         }
 
+        public List<Student> GetByFilter(int min_price, int max_price, string Gender)
+        {
+          return _studentRepository.GetByFilter(min_price,max_price,Gender);
+        }
+
         public Student GetById(int Id)
         {
           return  _studentRepository.GetById(Id);
         }
 
-        public Student GetByName(string Title)
+        public List<Student> GetByName(string Title)
         {
             return _studentRepository.GetByName(Title);
 
         }
+
+   
     }
 }

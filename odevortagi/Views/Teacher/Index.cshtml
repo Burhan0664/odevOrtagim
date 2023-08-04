@@ -1,4 +1,5 @@
 @model List<Teacher>
+
 <style>
   .column {
     border-color: white;
@@ -10,65 +11,110 @@
 
   .img {
     position: relative;
-    height: 5em
+    height: 5em;
   }
 
   .columg {
     position: relative;
     margin-top: 2em;
     text-align: center;
-
   }
-    .colum {
+
+  .colum {
     border-color: white;
     border-style: solid;
     position: relative;
     margin-top: 2em;
     background-color: rgb(233, 233, 233);
   }
-  
 </style>
-<div id ="Title"class="container">
+
+<div class="container-fluid">
   <div class="row">
-    <div class="col-2 colum">
-      Img
+    <div class="col-md-4">
+      <ul class="list-group">
+        <a asp-controller="Home" asp-action="Index">
+          <li class="list-group-item list-group-item-action m-lg-1">Home</li>
+        </a>
+        <a asp-action="Index" asp-controller="Teacher">
+          <li class="list-group-item list-group-item-action m-lg-1">Teachers</li>
+        </a>
+        <a asp-controller="Student" asp-action="Index">
+          <li class="list-group-item list-group-item-action m-lg-1">Exams</li>
+        </a>
+      </ul>
+      <img class="mt-5" src="https://www.ucarecdn.com/e9acae8c-c140-43e5-8084-d9aecf189f94/-/resize/700x/"
+        style="width: 30em;" alt="img">
+      <form method="GET">
+        <div class="container">
+          <div class="row row-cols-1">
+            <div class="col colums">
+              <h5>Price</h5><br>
+              <input type="text" name="min_price" placeholder="min TL" class="numericInput" required>
+              <input type="text" name="max_price" placeholder="max TL" class="numericInput" required>
+            </div>
+            <div class="col colums">
+              <h5>Gender</h5>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="Gender" value="Male" id="flexRadioDefault1">
+                <label class="form-check-label" for="Male">
+                  Erkek
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="Gender" value="Female" id="flexRadioDefault2" checked>
+                <label class="form-check-label" for="Female">
+                  Kadın
+                </label>
+              </div>
+            </div>
+           
+          </div>
+        </div>
+        <div class="form-check"> <input type="submit" name="submit" class="btn btn-success w-100 mt-2"></div>
+      </form>
     </div>
-    <div class="col-4 colum">
-      Title
-    </div>
-    <div class="col colum">
-      Price
-    </div>
-    <div class="col colum">
-      Majority
-    </div>
-    <div class="col colum">
-      Date
-    </div>
-  </div>
-</div>
-@foreach (var item in Model)
-{
-  <a href="">
-    <div class="container">
+    <div id="Title" class="container col-7">
       <div class="row">
-        <div class="col-2 columg">
-          <img class="img" src="@item.ImageUrl" alt="img">
+        <div class="col-2 colum">
+          Img
         </div>
-        <div class="col-4 column">
-           @item.Name
+        <div class="col-4 colum">
+          Title
         </div>
-        <div class="col column">
-          @item.Price TL
+        <div class="col colum">
+          Price
         </div>
-        <div class="col column">
-          @item.Majority
+        <div class="col colum">
+          Majority
         </div>
-        <div class="col column">
-          @item.Date
+        <div class="col colum">
+          Date
         </div>
       </div>
-    </div>
-  </a>
+    @foreach (var item in Model)
+    {
+    <a href="">
+      <div class="container ">
+        <div class="row">
+          <div class="col-2 columg">
+            <img class="img" src="@item.ImageUrl" alt="img">
+          </div>
+          <div class="col-4 column">
+            @item.Name
+          </div>
+          <div class="col column">
+            @item.Price TL
+          </div>
+          <div class="col column">
+            @item.Majority
+          </div>
+          <div class="col column">
+            @item.Date
+          </div>
+        </div>
+      </div>
 
-}
+    </a>
+    }
+    </div>
