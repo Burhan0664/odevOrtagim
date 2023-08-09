@@ -57,24 +57,23 @@
                             Dropdown
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item " href="#">Action</a>
-                            <a class="dropdown-item " href="#">Another action</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item " href="#">Something else here</a>
+                            <a class="dropdown-item " asp-controller="Teacher" asp-action="Index">Teachers</a>
+                            <a class="dropdown-item " asp-controller="Student" asp-action="Index">Exams</a>
+                           
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled text-white" href="#">Disabled</a>
+                        <a class="nav-link disabled text-white text-success" href="#">Founder Of Burhan Çavdaroğlu</a>
                     </li>
                 </ul>
                 <form method="GET" class="form-inline my-2 my-lg-0">
-                    <a class="nav-link text-white" href="#">Sign-in</a>
-                    <a class="nav-link text-white" href="#">Sign-up</a>
+                    <a class="nav-link text-white" asp-controller="Login" asp-action="In">Sign-in</a>
+                    <a class="nav-link text-white" asp-controller="Login" asp-action="Up">Sign-up</a>
 
 
                     <input name="explore" class="form-control mr-sm-2" type="search"
                         placeholder="Kelime veya ilan no adı giriniz" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="subm it">Search</button>
                 </form>
             </div>
         </nav>
