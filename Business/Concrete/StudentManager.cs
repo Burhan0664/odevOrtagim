@@ -14,7 +14,7 @@ namespace Concrete
         }
         public void Create(Student T)
         {
-           _studentRepository.Create(T);
+            _studentRepository.Create(T);
         }
 
         public void Delete(Student T)
@@ -24,17 +24,17 @@ namespace Concrete
 
         public List<Student> GetAll()
         {
-           return _studentRepository.GetAll();
+            return _studentRepository.GetAll();
         }
 
         public List<Student> GetByFilter(int min_price, int max_price, string Gender)
         {
-          return _studentRepository.GetByFilter(min_price,max_price,Gender);
+            return _studentRepository.GetByFilter(min_price, max_price, Gender);
         }
 
         public Student GetById(int Id)
         {
-          return  _studentRepository.GetById(Id);
+            return _studentRepository.GetById(Id);
         }
 
         public List<Student> GetByName(string Title)
@@ -43,6 +43,14 @@ namespace Concrete
 
         }
 
-   
+        public int GetCount()
+        {
+            return _studentRepository.GetCount();
+        }
+
+        public List<Student> GetProductsByPage(int page = 1, int pageSize = 5)
+        {
+            return _studentRepository.GetProductsByPage(page, pageSize);
+        }
     }
 }

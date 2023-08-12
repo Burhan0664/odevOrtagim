@@ -42,6 +42,14 @@ namespace Concrete
 
         }
 
+        public int GetCount()
+        {
+             return _teacherRepository.GetCount();
+        }
 
+        public List<Teacher> GetProductsByPage(int page = 1, int pageSize = 5)
+        {
+            return _teacherRepository.GetProductsByPage(page,pageSize);
+        }
     }
 }

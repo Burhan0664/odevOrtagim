@@ -1,4 +1,4 @@
-@model List<Teacher>
+@model TeacherListViewModel
 
 <style>
   .column {
@@ -92,7 +92,7 @@
           Date
         </div>
       </div>
-    @foreach (var item in Model)
+    @foreach (var item in Model.Teachers)
     {
     <a href="">
       <div class="container ">
@@ -117,4 +117,13 @@
 
     </a>
     }
+      <nav aria-label="Page navigation example">
+  <ul class="pagination m-5">
+ 
+    @for(var i =0;i<Model.PageInfo.TotalPage();i++){
+    <li class="page-item"><a class="page-link" href="/Teacher?page=@(i+1)">@(i+1)</a></li>
+
+    }
+  </ul>
+</nav>
     </div>

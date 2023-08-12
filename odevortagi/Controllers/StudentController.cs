@@ -6,6 +6,8 @@ using Concrete;
 using Entity;
 using Humanizer;
 using Microsoft.AspNetCore.Mvc;
+using odevortagi;
+
 
 namespace Controllers
 {
@@ -17,34 +19,73 @@ namespace Controllers
             this._studentRepository = studentRepository;
         }
 
-        public IActionResult Index()
+        public IActionResult Index(int page = 1)
         {
-            return View(_studentRepository.GetAll());
+            PageInfo pageInfo = new PageInfo()
+            {
+                TotalItems = _studentRepository.GetCount(),
+                CurrentPage = page,
+                ItemsPerPage = 5,
+            };
+            ProductListViewModel productListViewModel = new ProductListViewModel()
+            {
+                Students = _studentRepository.GetProductsByPage(page, 5),
+                PageInfo = pageInfo,
+            };
+
+            return View(productListViewModel);
 
 
         }
         [HttpGet]
-        public IActionResult Index(string explore, int min_price, int max_price, int Date, string Gender)
+        public IActionResult Index(string explore, int min_price, int max_price, int Date, string Gender, int page = 1)
         {
+            PageInfo pageInfo = new PageInfo()
+            {
+                TotalItems = _studentRepository.GetCount(),
+                CurrentPage = page,
+                ItemsPerPage = 5,
+            };
             if (!string.IsNullOrEmpty(explore))
             {
-                var studentsByName = _studentRepository.GetByName(explore);
-                if (studentsByName.Count > 0)
+                ProductListViewModel productListViewModel2 = new ProductListViewModel()
                 {
-                    return View(studentsByName);
+                    Students = _studentRepository.GetByName(explore),
+                    PageInfo = pageInfo,
+
+                };
+                if (productListViewModel2.Students.Count > 0)
+                {
+                    productListViewModel2.PageInfo.TotalItems = _studentRepository.GetByName(explore).Count();
+
+                    return View(productListViewModel2);
                 }
-                else{
+                else
+                {
                     return View("notFound");
                 }
             }
-
-            var studentsByFilter = _studentRepository.GetByFilter(min_price, max_price, Gender);
-            if (studentsByFilter.Count > 0)
+            ProductListViewModel productListViewModel1 = new ProductListViewModel()
             {
-                return View(studentsByFilter);
+                Students = _studentRepository.GetByFilter(min_price, max_price, Gender),
+                PageInfo = pageInfo,
+            };
+
+            if (productListViewModel1.Students.Count > 0)
+            {
+                productListViewModel1.PageInfo.TotalItems = _studentRepository.GetByFilter(min_price, max_price, Gender).Count();
+
+                return View(productListViewModel1);
             }
 
-            return View(_studentRepository.GetAll());
+
+            ProductListViewModel productListViewModel = new ProductListViewModel()
+            {
+                Students = _studentRepository.GetProductsByPage(page, 5),
+                PageInfo = pageInfo,
+            };
+
+            return View(productListViewModel);
         }
 
 

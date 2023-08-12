@@ -11,6 +11,7 @@ namespace Abstract
         List<TEntity> GetAll();
         List<TEntity> GetByName(string Title);
         List<TEntity> GetByFilter(int min_price,int max_price,string Gender);
-       
+        int GetCount();
+        List<TEntity> GetProductsByPage(int page=1 , int pageSize=5);
     }
 }

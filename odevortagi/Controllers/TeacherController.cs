@@ -5,44 +5,85 @@ using Abstract;
 using Concrete;
 using Microsoft.VisualBasic;
 using System.Net.Http.Headers;
+using odevortagi;
+
 
 namespace Controllers
 {
-    public class TeacherController:Controller
+    public class TeacherController : Controller
     {
         private readonly ITeacherRepository _teacherRepository;
         public TeacherController(ITeacherRepository teacherRepository)
         {
-            this._teacherRepository=teacherRepository;
+            this._teacherRepository = teacherRepository;
         }
-        public IActionResult Index()
-    {
-        
-        return View(_teacherRepository.GetAll());
-    }
-        [HttpGet]
-        public IActionResult Index(string explore, int min_price, int max_price, DateTime Date, string Gender)
+        public IActionResult Index(int page = 1, int pageSize = 5)
         {
+
+            PageInfo pageInfo = new PageInfo()
+            {
+                TotalItems = _teacherRepository.GetCount(),
+                CurrentPage = page,
+                ItemsPerPage = 5,
+            };
+            TeacherListViewModel teacherListViewModel = new TeacherListViewModel()
+            {
+                Teachers = _teacherRepository.GetProductsByPage(page, pageSize),
+                PageInfo = pageInfo,
+            };
+
+            return View(teacherListViewModel);
+        }
+        [HttpGet]
+        public IActionResult Index(string explore, int min_price, int max_price, DateTime Date, string Gender, int page = 1)
+        {
+            PageInfo pageInfo = new PageInfo()
+            {
+                TotalItems = _teacherRepository.GetCount(),
+                CurrentPage = page,
+                ItemsPerPage = 5,
+            };
+
             if (!string.IsNullOrEmpty(explore))
             {
-                var teacherByName = _teacherRepository.GetByName(explore);
-                if (teacherByName.Count > 0)
+                TeacherListViewModel teacherListViewModel1 = new TeacherListViewModel()
                 {
-                    return View(teacherByName);
+                    Teachers = _teacherRepository.GetByName(explore),
+                    PageInfo = pageInfo,
+                };
+
+                if (teacherListViewModel1.Teachers.Count > 0)
+                {
+                    teacherListViewModel1.PageInfo.TotalItems = _teacherRepository.GetByName(explore).Count();
+                    return View(teacherListViewModel1);
                 }
-                else{
+                else
+                {
                     return View("notFound");
                 }
             }
 
-            var teachersByFilter = _teacherRepository.GetByFilter(min_price, max_price, Gender);
-            if (teachersByFilter.Count >0)
+            TeacherListViewModel teacherListViewModel2 = new TeacherListViewModel()
             {
-                return View(teachersByFilter);  
+                Teachers = _teacherRepository.GetByFilter(min_price, max_price, Gender),
+                PageInfo = pageInfo,
+            };
+
+            if (teacherListViewModel2.Teachers.Count > 0)
+            {
+                teacherListViewModel2.PageInfo.TotalItems = _teacherRepository.GetByFilter(min_price, max_price, Gender).Count();
+
+                return View(teacherListViewModel2);
             }
-            else{
-                return View(_teacherRepository.GetAll());
-            }
+
+            TeacherListViewModel teacherListViewModel = new TeacherListViewModel()
+            {
+                Teachers = _teacherRepository.GetProductsByPage(page, 5),
+                PageInfo = pageInfo,
+            };
+
+            return View(teacherListViewModel);
+
         }
 
 

@@ -63,6 +63,23 @@ namespace Concrete
             }
         }
 
-        
+        public int GetCount()
+        {
+             using (var db = new ShopContext())
+            {
+                var products = db.Teachers.Count();
+                return products;
+            }
+        }
+
+        public List<Teacher> GetProductsByPage(int page = 1, int pageSize = 5)
+        {
+             using (var db = new ShopContext())
+            {
+                var products = db.Teachers.Skip((page-1)*pageSize).Take(pageSize).ToList();
+                return products;
+            }
+        }
     }
-}
+
+    }
