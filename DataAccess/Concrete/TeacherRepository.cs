@@ -5,81 +5,78 @@ namespace Concrete
 {
     public class TeacherRepository : ITeacherRepository
     {
+       private readonly ShopContext _context;
+       public TeacherRepository(ShopContext _context)
+       {
+        this._context = _context;
+       }
         public void Create(Teacher T)
         {
-            using (var db = new ShopContext())
-            {
-                db.Add(T);
-                db.SaveChanges();
-            }
+            
+                _context.Add(T);
+                _context.SaveChanges();
+            
         }
 
         public void Delete(Teacher T)
         {
-            using (var db = new ShopContext())
-            {
-                db.Remove(T);
-                db.SaveChanges();
-            }
+            
+                _context.Remove(T);
+                _context.SaveChanges();
+            
         }
 
-        public List<Teacher> GetAll()
+        public IQueryable<Teacher> GetAll()
         {
-            using (var db = new ShopContext())
-            {
-                var products = db.Teachers.ToList();
+            
+                var products = _context.Teachers.AsQueryable();
                 return products;
-            }
+            
         }
 
-       
 
-        public List<Teacher> GetByFilter(int min_price, int max_price, string Gender)
+
+        public IQueryable<Teacher> GetByFilter(int min_price, int max_price, string Gender)
         {
-              using (ShopContext db =new ShopContext())
-            {
-                var products=db.Teachers.Where(p => p.Gender == Gender && p.Price >= min_price && p.Price <= max_price).ToList()    ;
+            
+                var products = _context.Teachers.Where(p => p.Gender == Gender && p.Price >= min_price && p.Price <= max_price).AsQueryable();
                 return products;
-            }
+            
         }
 
-        
+
 
         public Teacher GetById(int Id)
         {
-            using (var db = new ShopContext())
-            {
-                var products = db.Teachers.Where(p => p.Id == Id).FirstOrDefault();
+            
+                var products = _context.Teachers.Where(p => p.Id == Id).FirstOrDefault();
                 return products;
-            }
+            
         }
 
-        public List<Teacher> GetByName(string Title)
+        public IQueryable<Teacher> GetByName(string Title)
         {
-            using (var db = new ShopContext())
-            {
-                var products = db.Teachers.Where(p => p.Name.ToLower().Contains(Title.ToLower())).ToList();
+            
+                var products = _context.Teachers.Where(p => p.Name.ToLower().Contains(Title.ToLower())).AsQueryable();
                 return products;
-            }
+            
         }
 
         public int GetCount()
         {
-             using (var db = new ShopContext())
-            {
-                var products = db.Teachers.Count();
+           
+                var products = _context.Teachers.Count();
                 return products;
-            }
+            
         }
 
-        public List<Teacher> GetProductsByPage(int page = 1, int pageSize = 5)
+        public IQueryable<Teacher> GetProductsByPage(int page = 1, int pageSize = 5)
         {
-             using (var db = new ShopContext())
-            {
-                var products = db.Teachers.Skip((page-1)*pageSize).Take(pageSize).ToList();
+            
+                var products = _context.Teachers.Skip((page - 1) * pageSize).Take(pageSize).AsQueryable();
                 return products;
-            }
+            
         }
     }
 
-    }
+}

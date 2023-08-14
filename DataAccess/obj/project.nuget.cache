@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "g/UeDIxzUDGMtmBSHk8pAmclvl60mw9DAwtSLtQMIE63WPHpjleRMwUkKSIDH5qZLRGFDt5rrYTfN/sO4dx7AA==",
+  "dgSpecHash": "B5BIRVMR1pNv6G5moTkAYJk6g42pHuRbZin4AUKbGzwwDnRzvOGeodQLIL5Z9opetN0wlrxjYJrxfdXsv5A8TQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\burha\\OneDrive\\Masaüstü\\coder\\ÖdevOrtağım\\DataAccess\\DataAccess.csproj",
+  "projectFilePath": "c:\\Users\\burha\\OneDrive\\Masaüstü\\coder\\ÖdevOrtağım\\DataAccess\\DataAccess.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\burha\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\burha\\.nuget\\packages\\microsoft.data.sqlite.core\\7.0.8\\microsoft.data.sqlite.core.7.0.8.nupkg.sha512",

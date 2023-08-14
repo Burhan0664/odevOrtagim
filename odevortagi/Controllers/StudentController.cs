@@ -16,7 +16,7 @@ namespace Controllers
         private readonly IStudentRepository _studentRepository;
         public StudentController(IStudentRepository studentRepository)
         {
-            this._studentRepository = studentRepository;
+            _studentRepository = studentRepository;
         }
 
         public IActionResult Index(int page = 1)
@@ -54,7 +54,7 @@ namespace Controllers
                     PageInfo = pageInfo,
 
                 };
-                if (productListViewModel2.Students.Count > 0)
+                if (productListViewModel2.Students.Count() > 0)
                 {
                     productListViewModel2.PageInfo.TotalItems = _studentRepository.GetByName(explore).Count();
 
@@ -71,7 +71,7 @@ namespace Controllers
                 PageInfo = pageInfo,
             };
 
-            if (productListViewModel1.Students.Count > 0)
+            if (productListViewModel1.Students.Count() > 0)
             {
                 productListViewModel1.PageInfo.TotalItems = _studentRepository.GetByFilter(min_price, max_price, Gender).Count();
 

@@ -9,15 +9,17 @@ namespace odevortagi
 {
     public class Startup
     {
-      
+
         public void ConfigureServices(IServiceCollection services)
         {
 
-    // Configure the DbContext with the SQLite connection
-            services.AddScoped<IStudentService,StudentManager>();
+            // Configure the DbContext with the SQLite connection
+            services.AddScoped<IStudentService, StudentManager>();
             services.AddScoped<ITeacherService, TeacherManager>();
             services.AddScoped<ITeacherRepository, TeacherRepository>();
             services.AddScoped<IStudentRepository, StudentRepository>();
+            services.AddScoped<ShopContext>();
+
             services.AddControllersWithViews();
         }
 
@@ -25,18 +27,18 @@ namespace odevortagi
         {
             if (env.IsDevelopment())
             {
-          
+
                 app.UseDeveloperExceptionPage();
             }
 
             app.UseRouting();
-           
+
 
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern:"{controller=Home}/{action=Index}/{id?}"
+                    pattern: "{controller=Home}/{action=Index}/{id?}"
                 );
             });
         }

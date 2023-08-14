@@ -9,93 +9,90 @@ namespace Concrete
 {
     public class StudentRepository : IStudentRepository
     {
+        private readonly ShopContext _context;
+
+        public StudentRepository(ShopContext context)
+        {
+            this._context = context;
+        }
         public void Create(Student T)
 
         {
-            using (var db = new ShopContext())
-            {
-                db.Add(T);
-                db.SaveChanges();
-            }
+            
+                _context.Add(T);
+                _context.SaveChanges();
+            
 
         }
 
         public void Delete(Student T)
         {
-            using (var db = new ShopContext())
-            {
-                db.Remove(T);
-                db.SaveChanges();
-            }
+            
+                _context.Remove(T);
+                _context.SaveChanges();
+            
         }
 
-        public List<Student> GetAll()
+        public IQueryable<Student> GetAll()
         {
-            using (var db = new ShopContext())
-            {
-                var products = db.Students.ToList();
+            
+                var products = _context.Students.AsQueryable();
                 return products;
-            }
+            
 
         }
 
-        public List<Student> GetByDate24(DateTime Date)
+        public IQueryable<Student> GetByDate24(DateTime Date)
         {
-            using (ShopContext db = new ShopContext())
-            {
-                var products = db.Students.Where(p => p.Date.Hour - Date.Hour <= 24).ToList();
+            
+                var products = _context.Students.Where(p => p.Date.Hour - Date.Hour <= 24).AsQueryable();
                 return products;
-            }
+            
         }
 
-        public List<Student> GetByFilter(int min_price, int max_price, string Gender)
+        public IQueryable<Student> GetByFilter(int min_price, int max_price, string Gender)
         {
-            using (ShopContext db = new ShopContext())
-            {
-                var products = db.Students.Where(p => p.Gender == Gender && p.Price >= min_price && p.Price <= max_price).ToList();
+            
+                var products = _context.Students.Where(p => p.Gender == Gender && p.Price >= min_price && p.Price <= max_price).AsQueryable();
                 return products;
-            }
+            
         }
 
 
 
         public Student GetById(int Id)
         {
-            using (var db = new ShopContext())
-            {
-                var products = db.Students.Where(p => p.Id == Id).FirstOrDefault();
+            
+                var products = _context.Students.Where(p => p.Id == Id).FirstOrDefault();
                 return products;
-            }
+            
         }
 
-        public List<Student> GetByName(string Title)
+        public IQueryable<Student> GetByName(string Title)
         {
-            using (var db = new ShopContext())
-            {
-                var products = db.Students.Where(p => p.Name.ToLower().Contains(Title.ToLower())).ToList();
+            
+                var products = _context.Students.Where(p => p.Name.ToLower().Contains(Title.ToLower())).AsQueryable();
                 return products;
-            }
+            
         }
 
         public int GetCount()
         {
-            using (var db = new ShopContext())
-            {
-                var products = db.Students.Count();
+              var products = _context.Students.Count();
                 return products;
-            }
+            
         }
 
-      
 
-        public List<Student> GetProductsByPage(int page = 1, int pageSize = 5)
+
+        public IQueryable<Student> GetProductsByPage(int page = 1, int pageSize = 5)
         {
-            using (var db = new ShopContext())
-            {
-                var products = db.Students.Skip((page-1)*pageSize).Take(pageSize).ToList();
+           
+                var products = _context.Students.Skip((page - 1) * pageSize).Take(pageSize).AsQueryable();
                 return products;
-            }
+            
         }
+
 
     }
 }

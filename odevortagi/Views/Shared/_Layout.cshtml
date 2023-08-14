@@ -23,6 +23,8 @@
 </style>
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Ödevi olan insanları hocalarla buluşturmak , bir konuda yeterince bilgi sahibi olan insanların becerilerini değerlendirmek">
     <title>Ödev Ortağım</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
@@ -30,7 +32,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="site.css">
     <link rel="stylesheet" href="img">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 </head>
 
@@ -59,7 +60,7 @@
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item " asp-controller="Teacher" asp-action="Index">Teachers</a>
                             <a class="dropdown-item " asp-controller="Student" asp-action="Index">Exams</a>
-                           
+
                         </div>
                     </li>
                     <li class="nav-item">
@@ -79,7 +80,7 @@
         </nav>
     </header>
     @RenderBody()
-        
+
 </body>
 
 </html>

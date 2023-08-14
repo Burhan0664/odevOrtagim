@@ -21,12 +21,12 @@ namespace Concrete
             _teacherRepository.Delete(T);
         }
 
-        public List<Teacher> GetAll()
+        public IQueryable<Teacher> GetAll()
         {
             return _teacherRepository.GetAll();
         }
 
-        public List<Teacher> GetByFilter(int min_price, int max_price, string Gender)
+        public IQueryable<Teacher> GetByFilter(int min_price, int max_price, string Gender)
         {
             return _teacherRepository.GetByFilter(min_price,max_price,Gender);
         }
@@ -36,7 +36,7 @@ namespace Concrete
             return _teacherRepository.GetById(Id);
         }
 
-        public List<Teacher> GetByName(string Title)
+        public IQueryable<Teacher> GetByName(string Title)
         {
             return _teacherRepository.GetByName(Title);
 
@@ -47,7 +47,7 @@ namespace Concrete
              return _teacherRepository.GetCount();
         }
 
-        public List<Teacher> GetProductsByPage(int page = 1, int pageSize = 5)
+        public IQueryable<Teacher> GetProductsByPage(int page = 1, int pageSize = 5)
         {
             return _teacherRepository.GetProductsByPage(page,pageSize);
         }

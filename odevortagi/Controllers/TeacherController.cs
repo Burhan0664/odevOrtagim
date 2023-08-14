@@ -52,7 +52,7 @@ namespace Controllers
                     PageInfo = pageInfo,
                 };
 
-                if (teacherListViewModel1.Teachers.Count > 0)
+                if (teacherListViewModel1.Teachers.Count() > 0)
                 {
                     teacherListViewModel1.PageInfo.TotalItems = _teacherRepository.GetByName(explore).Count();
                     return View(teacherListViewModel1);
@@ -69,7 +69,7 @@ namespace Controllers
                 PageInfo = pageInfo,
             };
 
-            if (teacherListViewModel2.Teachers.Count > 0)
+            if (teacherListViewModel2.Teachers.Count() > 0)
             {
                 teacherListViewModel2.PageInfo.TotalItems = _teacherRepository.GetByFilter(min_price, max_price, Gender).Count();
 

@@ -50,7 +50,7 @@ namespace DataAccess.Migrations
                         new
                         {
                             Id = 1,
-                            Date = new DateTime(2023, 8, 2, 16, 22, 10, 515, DateTimeKind.Local).AddTicks(7347),
+                            Date = new DateTime(2023, 8, 13, 15, 5, 25, 112, DateTimeKind.Local).AddTicks(2485),
                             Gender = "Male",
                             ImageUrl = "https://krtknadmn.karatekin.edu.tr/files/karatekin/yl/a.jpg",
                             Majority = "math",
@@ -60,7 +60,7 @@ namespace DataAccess.Migrations
                         new
                         {
                             Id = 2,
-                            Date = new DateTime(2023, 8, 2, 16, 22, 10, 515, DateTimeKind.Local).AddTicks(7353),
+                            Date = new DateTime(2023, 8, 13, 15, 5, 25, 112, DateTimeKind.Local).AddTicks(2490),
                             Gender = "Male",
                             ImageUrl = "https://krtknadmn.karatekin.edu.tr/files/karatekin/yl/a.jpg",
                             Majority = "math",
@@ -70,7 +70,7 @@ namespace DataAccess.Migrations
                         new
                         {
                             Id = 3,
-                            Date = new DateTime(2023, 8, 2, 16, 22, 10, 515, DateTimeKind.Local).AddTicks(7355),
+                            Date = new DateTime(2023, 8, 13, 15, 5, 25, 112, DateTimeKind.Local).AddTicks(2491),
                             Gender = "Male",
                             ImageUrl = "https://krtknadmn.karatekin.edu.tr/files/karatekin/yl/a.jpg",
                             Majority = "math",
@@ -80,7 +80,7 @@ namespace DataAccess.Migrations
                         new
                         {
                             Id = 4,
-                            Date = new DateTime(2023, 8, 2, 16, 22, 10, 515, DateTimeKind.Local).AddTicks(7357),
+                            Date = new DateTime(2023, 8, 13, 15, 5, 25, 112, DateTimeKind.Local).AddTicks(2493),
                             Gender = "Male",
                             ImageUrl = "https://krtknadmn.karatekin.edu.tr/files/karatekin/yl/a.jpg",
                             Majority = "math",
@@ -90,7 +90,7 @@ namespace DataAccess.Migrations
                         new
                         {
                             Id = 5,
-                            Date = new DateTime(2023, 8, 2, 16, 22, 10, 515, DateTimeKind.Local).AddTicks(7359),
+                            Date = new DateTime(2023, 8, 13, 15, 5, 25, 112, DateTimeKind.Local).AddTicks(2494),
                             Gender = "Female",
                             ImageUrl = "https://krtknadmn.karatekin.edu.tr/files/karatekin/yl/a.jpg",
                             Majority = "math",
@@ -100,7 +100,7 @@ namespace DataAccess.Migrations
                         new
                         {
                             Id = 6,
-                            Date = new DateTime(2023, 8, 2, 16, 22, 10, 515, DateTimeKind.Local).AddTicks(7360),
+                            Date = new DateTime(2023, 8, 13, 15, 5, 25, 112, DateTimeKind.Local).AddTicks(2495),
                             Gender = "Female",
                             ImageUrl = "https://krtknadmn.karatekin.edu.tr/files/karatekin/yl/a.jpg",
                             Majority = "math",
@@ -110,7 +110,7 @@ namespace DataAccess.Migrations
                         new
                         {
                             Id = 7,
-                            Date = new DateTime(2023, 8, 2, 16, 22, 10, 515, DateTimeKind.Local).AddTicks(7362),
+                            Date = new DateTime(2023, 8, 13, 15, 5, 25, 112, DateTimeKind.Local).AddTicks(2496),
                             Gender = "Male",
                             ImageUrl = "https://krtknadmn.karatekin.edu.tr/files/karatekin/yl/a.jpg",
                             Majority = "math",
@@ -151,7 +151,7 @@ namespace DataAccess.Migrations
                         new
                         {
                             Id = 1,
-                            Date = new DateTime(2023, 8, 2, 16, 22, 10, 515, DateTimeKind.Local).AddTicks(7053),
+                            Date = new DateTime(2023, 8, 13, 15, 5, 25, 112, DateTimeKind.Local).AddTicks(2365),
                             Gender = "Male",
                             ImageUrl = "https://krtknadmn.karatekin.edu.tr/files/karatekin/yl/a.jpg",
                             Majority = "math",
@@ -161,7 +161,7 @@ namespace DataAccess.Migrations
                         new
                         {
                             Id = 2,
-                            Date = new DateTime(2023, 8, 2, 16, 22, 10, 515, DateTimeKind.Local).AddTicks(7160),
+                            Date = new DateTime(2023, 8, 13, 15, 5, 25, 112, DateTimeKind.Local).AddTicks(2378),
                             ImageUrl = "https://krtknadmn.karatekin.edu.tr/files/karatekin/yl/a.jpg",
                             Majority = "math",
                             Name = "TEZ/PROJE/ ÖDEV PROFESYONEL DESTEK",
@@ -170,7 +170,7 @@ namespace DataAccess.Migrations
                         new
                         {
                             Id = 3,
-                            Date = new DateTime(2023, 8, 2, 16, 22, 10, 515, DateTimeKind.Local).AddTicks(7162),
+                            Date = new DateTime(2023, 8, 13, 15, 5, 25, 112, DateTimeKind.Local).AddTicks(2380),
                             Gender = "Male",
                             ImageUrl = "https://krtknadmn.karatekin.edu.tr/files/karatekin/yl/a.jpg",
                             Majority = "math",
@@ -180,7 +180,7 @@ namespace DataAccess.Migrations
                         new
                         {
                             Id = 4,
-                            Date = new DateTime(2023, 8, 2, 16, 22, 10, 515, DateTimeKind.Local).AddTicks(7164),
+                            Date = new DateTime(2023, 8, 13, 15, 5, 25, 112, DateTimeKind.Local).AddTicks(2381),
                             Gender = "Male",
                             ImageUrl = "https://krtknadmn.karatekin.edu.tr/files/karatekin/yl/a.jpg",
                             Majority = "math",
@@ -190,7 +190,7 @@ namespace DataAccess.Migrations
                         new
                         {
                             Id = 5,
-                            Date = new DateTime(2023, 8, 2, 16, 22, 10, 515, DateTimeKind.Local).AddTicks(7165),
+                            Date = new DateTime(2023, 8, 13, 15, 5, 25, 112, DateTimeKind.Local).AddTicks(2382),
                             Gender = "Male",
                             ImageUrl = "https://krtknadmn.karatekin.edu.tr/files/karatekin/yl/a.jpg",
                             Majority = "math",
@@ -200,7 +200,7 @@ namespace DataAccess.Migrations
                         new
                         {
                             Id = 6,
-                            Date = new DateTime(2023, 8, 2, 16, 22, 10, 515, DateTimeKind.Local).AddTicks(7167),
+                            Date = new DateTime(2023, 8, 13, 15, 5, 25, 112, DateTimeKind.Local).AddTicks(2383),
                             Gender = "Female",
                             ImageUrl = "https://krtknadmn.karatekin.edu.tr/files/karatekin/yl/a.jpg",
                             Majority = "math",
@@ -210,7 +210,7 @@ namespace DataAccess.Migrations
                         new
                         {
                             Id = 7,
-                            Date = new DateTime(2023, 8, 2, 16, 22, 10, 515, DateTimeKind.Local).AddTicks(7169),
+                            Date = new DateTime(2023, 8, 13, 15, 5, 25, 112, DateTimeKind.Local).AddTicks(2385),
                             Gender = "Female",
                             ImageUrl = "https://krtknadmn.karatekin.edu.tr/files/karatekin/yl/a.jpg",
                             Majority = "math",
