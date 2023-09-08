@@ -72,3 +72,9 @@ C:\Users\burha\OneDrive\Masaüstü\coder\ÖdevOrtağım\odevortagi\bin\Debug\net
 C:\Users\burha\OneDrive\Masaüstü\coder\ÖdevOrtağım\odevortagi\bin\Debug\net7.0\DataAccess.dll
 C:\Users\burha\OneDrive\Masaüstü\coder\ÖdevOrtağım\odevortagi\bin\Debug\net7.0\Business.pdb
 C:\Users\burha\OneDrive\Masaüstü\coder\ÖdevOrtağım\odevortagi\bin\Debug\net7.0\DataAccess.pdb
+C:\Users\burha\OneDrive\Masaüstü\coder\ÖdevOrtağım\odevortagi\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\burha\OneDrive\Masaüstü\coder\ÖdevOrtağım\odevortagi\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\burha\OneDrive\Masaüstü\coder\ÖdevOrtağım\odevortagi\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\burha\OneDrive\Masaüstü\coder\ÖdevOrtağım\odevortagi\bin\Debug\net7.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\burha\OneDrive\Masaüstü\coder\ÖdevOrtağım\odevortagi\bin\Debug\net7.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\burha\OneDrive\Masaüstü\coder\ÖdevOrtağım\odevortagi\bin\Debug\net7.0\Microsoft.Extensions.Options.dll

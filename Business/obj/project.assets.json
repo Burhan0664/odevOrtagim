@@ -1305,11 +1305,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\burha\\OneDrive\\Masaüstü\\coder\\ÖdevOrtağım\\Business\\Business.csproj",
+      "projectUniqueName": "c:\\Users\\burha\\OneDrive\\Masaüstü\\coder\\ÖdevOrtağım\\Business\\Business.csproj",
       "projectName": "Business",
-      "projectPath": "C:\\Users\\burha\\OneDrive\\Masaüstü\\coder\\ÖdevOrtağım\\Business\\Business.csproj",
+      "projectPath": "c:\\Users\\burha\\OneDrive\\Masaüstü\\coder\\ÖdevOrtağım\\Business\\Business.csproj",
       "packagesPath": "C:\\Users\\burha\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\burha\\OneDrive\\Masaüstü\\coder\\ÖdevOrtağım\\Business\\obj\\",
+      "outputPath": "c:\\Users\\burha\\OneDrive\\Masaüstü\\coder\\ÖdevOrtağım\\Business\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\burha\\AppData\\Roaming\\NuGet\\NuGet.Config",
