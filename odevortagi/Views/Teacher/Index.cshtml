@@ -42,6 +42,12 @@
         <a asp-controller="Student" asp-action="Index">
           <li class="list-group-item list-group-item-action m-lg-1">Exams</li>
         </a>
+        @if (User.Identity.IsAuthenticated)
+        {
+          <a asp-controller="Advert" asp-action="TeacherAd">
+            <li class="list-group-item list-group-item-action m-lg-1 bg-danger">Create An Teacher Advert</li>
+          </a>
+        }
       </ul>
       <img class="mt-5" src="https://www.ucarecdn.com/e9acae8c-c140-43e5-8084-d9aecf189f94/-/resize/700x/"
         style="width: 30em;" alt="img">
@@ -62,13 +68,14 @@
                 </label>
               </div>
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="Gender" value="Female" id="flexRadioDefault2" checked>
+                <input class="form-check-input" type="radio" name="Gender" value="Female" id="flexRadioDefault2"
+                  checked>
                 <label class="form-check-label" for="Female">
                   Kadın
                 </label>
               </div>
             </div>
-           
+
           </div>
         </div>
         <div class="form-check"> <input type="submit" name="submit" class="btn btn-success w-100 mt-2"></div>
@@ -92,38 +99,39 @@
           Date
         </div>
       </div>
-    @foreach (var item in Model.Teachers)
-    {
-    <a href="">
-      <div class="container ">
-        <div class="row">
-          <div class="col-2 columg">
-            <img class="img" src="@item.ImageUrl" alt="img">
+      @foreach (var item in Model.Teachers)
+      {
+        <a href="">
+          <div class="container ">
+            <div class="row">
+              <div class="col-2 columg">
+                <img class="img" src="@item.ImageUrl" alt="img">
+              </div>
+              <div class="col-4 column">
+                @item.Name
+              </div>
+              <div class="col column">
+                @item.Price TL
+              </div>
+              <div class="col column">
+                @item.Majority
+              </div>
+              <div class="col column">
+                @item.Date
+              </div>
+            </div>
           </div>
-          <div class="col-4 column">
-            @item.Name
-          </div>
-          <div class="col column">
-            @item.Price TL
-          </div>
-          <div class="col column">
-            @item.Majority
-          </div>
-          <div class="col column">
-            @item.Date
-          </div>
-        </div>
-      </div>
 
-    </a>
-    }
+        </a>
+      }
       <nav aria-label="Page navigation example">
-  <ul class="pagination m-5">
- 
-    @for(var i =0;i<Model.PageInfo.TotalPage();i++){
-    <li class="page-item"><a class="page-link" href="/Teacher?page=@(i+1)">@(i+1)</a></li>
+        <ul class="pagination m-5">
 
-    }
-  </ul>
-</nav>
+          @for (var i = 0; i < Model.PageInfo.TotalPage(); i++)
+          {
+            <li class="page-item"><a class="page-link" href="/Teacher?page=@(i+1)">@(i + 1)</a></li>
+
+          }
+        </ul>
+      </nav>
     </div>

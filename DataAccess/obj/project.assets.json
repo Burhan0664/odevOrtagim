@@ -1286,11 +1286,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\burha\\OneDrive\\Masaüstü\\coder\\ÖdevOrtağım\\DataAccess\\DataAccess.csproj",
+      "projectUniqueName": "c:\\Users\\burha\\OneDrive\\Masaüstü\\coder\\ÖdevOrtağım\\DataAccess\\DataAccess.csproj",
       "projectName": "DataAccess",
-      "projectPath": "C:\\Users\\burha\\OneDrive\\Masaüstü\\coder\\ÖdevOrtağım\\DataAccess\\DataAccess.csproj",
+      "projectPath": "c:\\Users\\burha\\OneDrive\\Masaüstü\\coder\\ÖdevOrtağım\\DataAccess\\DataAccess.csproj",
       "packagesPath": "C:\\Users\\burha\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\burha\\OneDrive\\Masaüstü\\coder\\ÖdevOrtağım\\DataAccess\\obj\\",
+      "outputPath": "c:\\Users\\burha\\OneDrive\\Masaüstü\\coder\\ÖdevOrtağım\\DataAccess\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\burha\\AppData\\Roaming\\NuGet\\NuGet.Config",

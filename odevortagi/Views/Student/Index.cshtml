@@ -42,6 +42,12 @@
         <a asp-controller="Student" asp-action="Index">
           <li class="list-group-item list-group-item-action m-lg-1">Exams</li>
         </a>
+         @if (User.Identity.IsAuthenticated)
+        {
+          <a asp-controller="Advert" asp-action="StudentAd">
+            <li class="list-group-item list-group-item-action m-lg-1 bg-danger">Create An Student Advert</li>
+          </a>
+        }
       </ul>
       <img class="mt-5" src="https://www.ucarecdn.com/e9acae8c-c140-43e5-8084-d9aecf189f94/-/resize/700x/"
         style="width: 30em;" alt="img">

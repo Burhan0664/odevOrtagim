@@ -1522,8 +1522,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "c:\\Users\\burha\\OneDrive\\Masaüstü\\coder\\ÖdevOrtağım\\Business\\Business.csproj": {
-              "projectPath": "c:\\Users\\burha\\OneDrive\\Masaüstü\\coder\\ÖdevOrtağım\\Business\\Business.csproj"
+            "C:\\Users\\burha\\OneDrive\\Masaüstü\\coder\\ÖdevOrtağım\\Business\\Business.csproj": {
+              "projectPath": "C:\\Users\\burha\\OneDrive\\Masaüstü\\coder\\ÖdevOrtağım\\Business\\Business.csproj"
             },
             "c:\\Users\\burha\\OneDrive\\Masaüstü\\coder\\ÖdevOrtağım\\DataAccess\\DataAccess.csproj": {
               "projectPath": "c:\\Users\\burha\\OneDrive\\Masaüstü\\coder\\ÖdevOrtağım\\DataAccess\\DataAccess.csproj"

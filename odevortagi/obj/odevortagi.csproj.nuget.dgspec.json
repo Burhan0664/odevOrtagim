@@ -4,14 +4,14 @@
     "C:\\Users\\burha\\OneDrive\\Masaüstü\\coder\\ÖdevOrtağım\\odevortagi\\odevortagi.csproj": {}
   },
   "projects": {
-    "c:\\Users\\burha\\OneDrive\\Masaüstü\\coder\\ÖdevOrtağım\\Business\\Business.csproj": {
+    "C:\\Users\\burha\\OneDrive\\Masaüstü\\coder\\ÖdevOrtağım\\Business\\Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\burha\\OneDrive\\Masaüstü\\coder\\ÖdevOrtağım\\Business\\Business.csproj",
+        "projectUniqueName": "C:\\Users\\burha\\OneDrive\\Masaüstü\\coder\\ÖdevOrtağım\\Business\\Business.csproj",
         "projectName": "Business",
-        "projectPath": "c:\\Users\\burha\\OneDrive\\Masaüstü\\coder\\ÖdevOrtağım\\Business\\Business.csproj",
+        "projectPath": "C:\\Users\\burha\\OneDrive\\Masaüstü\\coder\\ÖdevOrtağım\\Business\\Business.csproj",
         "packagesPath": "C:\\Users\\burha\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\burha\\OneDrive\\Masaüstü\\coder\\ÖdevOrtağım\\Business\\obj\\",
+        "outputPath": "C:\\Users\\burha\\OneDrive\\Masaüstü\\coder\\ÖdevOrtağım\\Business\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\burha\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -222,8 +222,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "c:\\Users\\burha\\OneDrive\\Masaüstü\\coder\\ÖdevOrtağım\\Business\\Business.csproj": {
-                "projectPath": "c:\\Users\\burha\\OneDrive\\Masaüstü\\coder\\ÖdevOrtağım\\Business\\Business.csproj"
+              "C:\\Users\\burha\\OneDrive\\Masaüstü\\coder\\ÖdevOrtağım\\Business\\Business.csproj": {
+                "projectPath": "C:\\Users\\burha\\OneDrive\\Masaüstü\\coder\\ÖdevOrtağım\\Business\\Business.csproj"
               },
               "c:\\Users\\burha\\OneDrive\\Masaüstü\\coder\\ÖdevOrtağım\\DataAccess\\DataAccess.csproj": {
                 "projectPath": "c:\\Users\\burha\\OneDrive\\Masaüstü\\coder\\ÖdevOrtağım\\DataAccess\\DataAccess.csproj"

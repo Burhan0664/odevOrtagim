@@ -73,13 +73,13 @@ namespace odevortagi
                 app.UseExceptionHandler("/Home/Error");
                 app.UseHsts();
             }
-            app.UseAuthorization();
             app.UseAuthentication();
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 
 
             app.UseRouting();
+            app.UseAuthorization();
 
 
             app.UseEndpoints(endpoints =>

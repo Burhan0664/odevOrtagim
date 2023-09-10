@@ -16,6 +16,14 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\burha\OneDrive\Masaüstü\coder\ÖdevOrtağım\odevortagi
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/burha/OneDrive/Masaüstü/coder/ÖdevOrtağım/odevortagi/Views/Advert/StudentAd.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWR2ZXJ0XFN0dWRlbnRBZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/burha/OneDrive/Masaüstü/coder/ÖdevOrtağım/odevortagi/Views/Advert/TeacherAd.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWR2ZXJ0XFRlYWNoZXJBZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/burha/OneDrive/Masaüstü/coder/ÖdevOrtağım/odevortagi/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

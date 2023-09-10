@@ -66,12 +66,12 @@
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled text-white text-success" href="#">Founder Of Burhan Çavdaroğlu</a>
+                        <a class="nav-link disabled text-white text-success" href="#">Found By Burhan Çavdaroğlu</a>
                     </li>
                 </ul>
                     @if (User.Identity.IsAuthenticated)
                     { 
-                        
+                        <div class="text-info">@User.Identity.Name</div>
                         <form method="POST" asp-controller="Login" asp-action="Logout">
                             <input  class="btn btn-danger my-2 mx-2" type="submit" value="Logout"/>
                         </form>
