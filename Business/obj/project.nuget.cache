@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GTQvWZE+Eid5RfXdb4CFqocz2JZk2yaJ7pPxG3GpdHZTu8+N/fPLzt8HzA74zBDGKra/frmUZ9OWbOfYmXCc1g==",
+  "dgSpecHash": "txpfHFBObXvu+FDYqkOy05PZa0u3SrLnxLZlMv0k+WhTIKEFubk89qb65EYATC2ZUwD2dQr91+as+iuGLyZYSg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\burha\\OneDrive\\Masaüstü\\coder\\ÖdevOrtağım\\Business\\Business.csproj",
+  "projectFilePath": "c:\\Users\\burha\\OneDrive\\Masaüstü\\coder\\ÖdevOrtağım\\Business\\Business.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\burha\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\burha\\.nuget\\packages\\microsoft.data.sqlite.core\\7.0.8\\microsoft.data.sqlite.core.7.0.8.nupkg.sha512",

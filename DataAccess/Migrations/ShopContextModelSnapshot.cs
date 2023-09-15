@@ -26,6 +26,10 @@ namespace DataAccess.Migrations
                     b.Property<DateTime>("Date")
                         .HasColumnType("TEXT");
 
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
                     b.Property<string>("Gender")
                         .IsRequired()
                         .HasColumnType("TEXT");
@@ -39,6 +43,10 @@ namespace DataAccess.Migrations
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("PhoneNumber")
                         .IsRequired()
                         .HasColumnType("TEXT");
 
@@ -53,71 +61,85 @@ namespace DataAccess.Migrations
                         new
                         {
                             Id = 1,
-                            Date = new DateTime(2023, 9, 10, 16, 46, 55, 334, DateTimeKind.Local).AddTicks(1062),
+                            Date = new DateTime(2023, 9, 14, 15, 16, 12, 968, DateTimeKind.Local).AddTicks(7418),
+                            Description = "Boğaziçi Üniversitesi Bilgisayar Mühendisliği mezunu, aynı üniversitede Endüstri Mühendisliği Doktorası yapan, ÖSS Matematik Kitapları Yazarı, eski İTÜ Öğretim Görevlisinden, YKS sınavlarına yönelik veya takviye amaçlı Matematik, Geometri, Fizik, Kimya, İngilizce, SAT Mathematics, AP Calculus, AP Physics, AP Statistics, IB Mathematics, IB Physics vb. dersleri verilir Ayrıca, üniversite öğrencilerine/mezunlarına yönelik KPSS Matematik, ALES Matematik, GRE/GMAT Mathematics, Calculus, Differential Equations, Discrete Mathematics, University Physics, Operations Research, Probability, Statistics, Mathematical Statistics, Econometrics, SAS, SPSS, Linear Algebra, C, C++, C#.NET, Java vb. dersleri  (Çevrimiçi/Öğrencinin Evi/Hocanın Evi) verilir...",
                             Gender = "Male",
                             ImageUrl = "https://krtknadmn.karatekin.edu.tr/files/karatekin/yl/a.jpg",
                             Majority = "math",
                             Name = "Matematik sınavı var",
+                            PhoneNumber = "05070198810",
                             Price = 2000m
                         },
                         new
                         {
                             Id = 2,
-                            Date = new DateTime(2023, 9, 10, 16, 46, 55, 334, DateTimeKind.Local).AddTicks(1066),
+                            Date = new DateTime(2023, 9, 14, 15, 16, 12, 968, DateTimeKind.Local).AddTicks(7423),
+                            Description = "Boğaziçi Üniversitesi Bilgisayar Mühendisliği mezunu, aynı üniversitede Endüstri Mühendisliği Doktorası yapan, ÖSS Matematik Kitapları Yazarı, eski İTÜ Öğretim Görevlisinden, YKS sınavlarına yönelik veya takviye amaçlı Matematik, Geometri, Fizik, Kimya, İngilizce, SAT Mathematics, AP Calculus, AP Physics, AP Statistics, IB Mathematics, IB Physics vb. dersleri verilir Ayrıca, üniversite öğrencilerine/mezunlarına yönelik KPSS Matematik, ALES Matematik, GRE/GMAT Mathematics, Calculus, Differential Equations, Discrete Mathematics, University Physics, Operations Research, Probability, Statistics, Mathematical Statistics, Econometrics, SAS, SPSS, Linear Algebra, C, C++, C#.NET, Java vb. dersleri  (Çevrimiçi/Öğrencinin Evi/Hocanın Evi) verilir...",
                             Gender = "Male",
                             ImageUrl = "https://krtknadmn.karatekin.edu.tr/files/karatekin/yl/a.jpg",
                             Majority = "math",
                             Name = "yazılım yardım",
+                            PhoneNumber = "05070198810",
                             Price = 20200m
                         },
                         new
                         {
                             Id = 3,
-                            Date = new DateTime(2023, 9, 10, 16, 46, 55, 334, DateTimeKind.Local).AddTicks(1068),
+                            Date = new DateTime(2023, 9, 14, 15, 16, 12, 968, DateTimeKind.Local).AddTicks(7425),
+                            Description = "Boğaziçi Üniversitesi Bilgisayar Mühendisliği mezunu, aynı üniversitede Endüstri Mühendisliği Doktorası yapan, ÖSS Matematik Kitapları Yazarı, eski İTÜ Öğretim Görevlisinden, YKS sınavlarına yönelik veya takviye amaçlı Matematik, Geometri, Fizik, Kimya, İngilizce, SAT Mathematics, AP Calculus, AP Physics, AP Statistics, IB Mathematics, IB Physics vb. dersleri verilir Ayrıca, üniversite öğrencilerine/mezunlarına yönelik KPSS Matematik, ALES Matematik, GRE/GMAT Mathematics, Calculus, Differential Equations, Discrete Mathematics, University Physics, Operations Research, Probability, Statistics, Mathematical Statistics, Econometrics, SAS, SPSS, Linear Algebra, C, C++, C#.NET, Java vb. dersleri  (Çevrimiçi/Öğrencinin Evi/Hocanın Evi) verilir...",
                             Gender = "Male",
                             ImageUrl = "https://krtknadmn.karatekin.edu.tr/files/karatekin/yl/a.jpg",
                             Majority = "math",
                             Name = "Matematik sınavı var",
+                            PhoneNumber = "05070198810",
                             Price = 20200m
                         },
                         new
                         {
                             Id = 4,
-                            Date = new DateTime(2023, 9, 10, 16, 46, 55, 334, DateTimeKind.Local).AddTicks(1070),
+                            Date = new DateTime(2023, 9, 14, 15, 16, 12, 968, DateTimeKind.Local).AddTicks(7427),
+                            Description = "Boğaziçi Üniversitesi Bilgisayar Mühendisliği mezunu, aynı üniversitede Endüstri Mühendisliği Doktorası yapan, ÖSS Matematik Kitapları Yazarı, eski İTÜ Öğretim Görevlisinden, YKS sınavlarına yönelik veya takviye amaçlı Matematik, Geometri, Fizik, Kimya, İngilizce, SAT Mathematics, AP Calculus, AP Physics, AP Statistics, IB Mathematics, IB Physics vb. dersleri verilir Ayrıca, üniversite öğrencilerine/mezunlarına yönelik KPSS Matematik, ALES Matematik, GRE/GMAT Mathematics, Calculus, Differential Equations, Discrete Mathematics, University Physics, Operations Research, Probability, Statistics, Mathematical Statistics, Econometrics, SAS, SPSS, Linear Algebra, C, C++, C#.NET, Java vb. dersleri  (Çevrimiçi/Öğrencinin Evi/Hocanın Evi) verilir...",
                             Gender = "Male",
                             ImageUrl = "https://krtknadmn.karatekin.edu.tr/files/karatekin/yl/a.jpg",
                             Majority = "math",
                             Name = "Matematik sınavı var",
+                            PhoneNumber = "05070198810",
                             Price = 223000m
                         },
                         new
                         {
                             Id = 5,
-                            Date = new DateTime(2023, 9, 10, 16, 46, 55, 334, DateTimeKind.Local).AddTicks(1071),
+                            Date = new DateTime(2023, 9, 14, 15, 16, 12, 968, DateTimeKind.Local).AddTicks(7428),
+                            Description = "Boğaziçi Üniversitesi Bilgisayar Mühendisliği mezunu, aynı üniversitede Endüstri Mühendisliği Doktorası yapan, ÖSS Matematik Kitapları Yazarı, eski İTÜ Öğretim Görevlisinden, YKS sınavlarına yönelik veya takviye amaçlı Matematik, Geometri, Fizik, Kimya, İngilizce, SAT Mathematics, AP Calculus, AP Physics, AP Statistics, IB Mathematics, IB Physics vb. dersleri verilir Ayrıca, üniversite öğrencilerine/mezunlarına yönelik KPSS Matematik, ALES Matematik, GRE/GMAT Mathematics, Calculus, Differential Equations, Discrete Mathematics, University Physics, Operations Research, Probability, Statistics, Mathematical Statistics, Econometrics, SAS, SPSS, Linear Algebra, C, C++, C#.NET, Java vb. dersleri  (Çevrimiçi/Öğrencinin Evi/Hocanın Evi) verilir...",
                             Gender = "Female",
                             ImageUrl = "https://krtknadmn.karatekin.edu.tr/files/karatekin/yl/a.jpg",
                             Majority = "math",
                             Name = "Matematik sınavı var",
+                            PhoneNumber = "05070198810",
                             Price = 20300m
                         },
                         new
                         {
                             Id = 6,
-                            Date = new DateTime(2023, 9, 10, 16, 46, 55, 334, DateTimeKind.Local).AddTicks(1073),
+                            Date = new DateTime(2023, 9, 14, 15, 16, 12, 968, DateTimeKind.Local).AddTicks(7430),
+                            Description = "Boğaziçi Üniversitesi Bilgisayar Mühendisliği mezunu, aynı üniversitede Endüstri Mühendisliği Doktorası yapan, ÖSS Matematik Kitapları Yazarı, eski İTÜ Öğretim Görevlisinden, YKS sınavlarına yönelik veya takviye amaçlı Matematik, Geometri, Fizik, Kimya, İngilizce, SAT Mathematics, AP Calculus, AP Physics, AP Statistics, IB Mathematics, IB Physics vb. dersleri verilir Ayrıca, üniversite öğrencilerine/mezunlarına yönelik KPSS Matematik, ALES Matematik, GRE/GMAT Mathematics, Calculus, Differential Equations, Discrete Mathematics, University Physics, Operations Research, Probability, Statistics, Mathematical Statistics, Econometrics, SAS, SPSS, Linear Algebra, C, C++, C#.NET, Java vb. dersleri  (Çevrimiçi/Öğrencinin Evi/Hocanın Evi) verilir...",
                             Gender = "Female",
                             ImageUrl = "https://krtknadmn.karatekin.edu.tr/files/karatekin/yl/a.jpg",
                             Majority = "math",
                             Name = "Matematik sınavı var",
+                            PhoneNumber = "05070198810",
                             Price = 20400m
                         },
                         new
                         {
                             Id = 7,
-                            Date = new DateTime(2023, 9, 10, 16, 46, 55, 334, DateTimeKind.Local).AddTicks(1074),
+                            Date = new DateTime(2023, 9, 14, 15, 16, 12, 968, DateTimeKind.Local).AddTicks(7431),
+                            Description = "Boğaziçi Üniversitesi Bilgisayar Mühendisliği mezunu, aynı üniversitede Endüstri Mühendisliği Doktorası yapan, ÖSS Matematik Kitapları Yazarı, eski İTÜ Öğretim Görevlisinden, YKS sınavlarına yönelik veya takviye amaçlı Matematik, Geometri, Fizik, Kimya, İngilizce, SAT Mathematics, AP Calculus, AP Physics, AP Statistics, IB Mathematics, IB Physics vb. dersleri verilir Ayrıca, üniversite öğrencilerine/mezunlarına yönelik KPSS Matematik, ALES Matematik, GRE/GMAT Mathematics, Calculus, Differential Equations, Discrete Mathematics, University Physics, Operations Research, Probability, Statistics, Mathematical Statistics, Econometrics, SAS, SPSS, Linear Algebra, C, C++, C#.NET, Java vb. dersleri  (Çevrimiçi/Öğrencinin Evi/Hocanın Evi) verilir...",
                             Gender = "Male",
                             ImageUrl = "https://krtknadmn.karatekin.edu.tr/files/karatekin/yl/a.jpg",
                             Majority = "math",
                             Name = "Matematik sınavı var",
+                            PhoneNumber = "05070198810",
                             Price = 25000m
                         });
                 });
@@ -129,6 +151,10 @@ namespace DataAccess.Migrations
                         .HasColumnType("INTEGER");
 
                     b.Property<DateTime>("Date")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Gender")
@@ -146,6 +172,10 @@ namespace DataAccess.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
+                    b.Property<string>("PhoneNumber")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
                     b.Property<decimal>("Price")
                         .HasColumnType("TEXT");
 
@@ -157,70 +187,84 @@ namespace DataAccess.Migrations
                         new
                         {
                             Id = 1,
-                            Date = new DateTime(2023, 9, 10, 16, 46, 55, 334, DateTimeKind.Local).AddTicks(917),
+                            Date = new DateTime(2023, 9, 14, 15, 16, 12, 968, DateTimeKind.Local).AddTicks(7273),
+                            Description = "Boğaziçi Üniversitesi Bilgisayar Mühendisliği mezunu, aynı üniversitede Endüstri Mühendisliği Doktorası yapan, ÖSS Matematik Kitapları Yazarı, eski İTÜ Öğretim Görevlisinden, YKS sınavlarına yönelik veya takviye amaçlı Matematik, Geometri, Fizik, Kimya, İngilizce, SAT Mathematics, AP Calculus, AP Physics, AP Statistics, IB Mathematics, IB Physics vb. dersleri verilir Ayrıca, üniversite öğrencilerine/mezunlarına yönelik KPSS Matematik, ALES Matematik, GRE/GMAT Mathematics, Calculus, Differential Equations, Discrete Mathematics, University Physics, Operations Research, Probability, Statistics, Mathematical Statistics, Econometrics, SAS, SPSS, Linear Algebra, C, C++, C#.NET, Java vb. dersleri  (Çevrimiçi/Öğrencinin Evi/Hocanın Evi) verilir...",
                             Gender = "Male",
                             ImageUrl = "https://krtknadmn.karatekin.edu.tr/files/karatekin/yl/a.jpg",
                             Majority = "math",
                             Name = "TIP ÖĞRENCİSİNDEN AÇIK LİSE SINAVI YARDIM",
+                            PhoneNumber = "05070198810",
                             Price = 2000m
                         },
                         new
                         {
                             Id = 2,
-                            Date = new DateTime(2023, 9, 10, 16, 46, 55, 334, DateTimeKind.Local).AddTicks(937),
+                            Date = new DateTime(2023, 9, 14, 15, 16, 12, 968, DateTimeKind.Local).AddTicks(7288),
+                            Description = "Boğaziçi Üniversitesi Bilgisayar Mühendisliği mezunu, aynı üniversitede Endüstri Mühendisliği Doktorası yapan, ÖSS Matematik Kitapları Yazarı, eski İTÜ Öğretim Görevlisinden, YKS sınavlarına yönelik veya takviye amaçlı Matematik, Geometri, Fizik, Kimya, İngilizce, SAT Mathematics, AP Calculus, AP Physics, AP Statistics, IB Mathematics, IB Physics vb. dersleri verilir Ayrıca, üniversite öğrencilerine/mezunlarına yönelik KPSS Matematik, ALES Matematik, GRE/GMAT Mathematics, Calculus, Differential Equations, Discrete Mathematics, University Physics, Operations Research, Probability, Statistics, Mathematical Statistics, Econometrics, SAS, SPSS, Linear Algebra, C, C++, C#.NET, Java vb. dersleri  (Çevrimiçi/Öğrencinin Evi/Hocanın Evi) verilir...",
                             ImageUrl = "https://krtknadmn.karatekin.edu.tr/files/karatekin/yl/a.jpg",
                             Majority = "math",
                             Name = "TEZ/PROJE/ ÖDEV PROFESYONEL DESTEK",
+                            PhoneNumber = "05070198810",
                             Price = 3422m
                         },
                         new
                         {
                             Id = 3,
-                            Date = new DateTime(2023, 9, 10, 16, 46, 55, 334, DateTimeKind.Local).AddTicks(939),
+                            Date = new DateTime(2023, 9, 14, 15, 16, 12, 968, DateTimeKind.Local).AddTicks(7290),
+                            Description = "Boğaziçi Üniversitesi Bilgisayar Mühendisliği mezunu, aynı üniversitede Endüstri Mühendisliği Doktorası yapan, ÖSS Matematik Kitapları Yazarı, eski İTÜ Öğretim Görevlisinden, YKS sınavlarına yönelik veya takviye amaçlı Matematik, Geometri, Fizik, Kimya, İngilizce, SAT Mathematics, AP Calculus, AP Physics, AP Statistics, IB Mathematics, IB Physics vb. dersleri verilir Ayrıca, üniversite öğrencilerine/mezunlarına yönelik KPSS Matematik, ALES Matematik, GRE/GMAT Mathematics, Calculus, Differential Equations, Discrete Mathematics, University Physics, Operations Research, Probability, Statistics, Mathematical Statistics, Econometrics, SAS, SPSS, Linear Algebra, C, C++, C#.NET, Java vb. dersleri  (Çevrimiçi/Öğrencinin Evi/Hocanın Evi) verilir...",
                             Gender = "Male",
                             ImageUrl = "https://krtknadmn.karatekin.edu.tr/files/karatekin/yl/a.jpg",
                             Majority = "math",
                             Name = "EGE TIP ÖĞRENCİSİNDE SAĞLIK ve AÇIK ÖĞRETİM DERSLERİNE DESTEK",
+                            PhoneNumber = "05070198810",
                             Price = 12332m
                         },
                         new
                         {
                             Id = 4,
-                            Date = new DateTime(2023, 9, 10, 16, 46, 55, 334, DateTimeKind.Local).AddTicks(940),
+                            Date = new DateTime(2023, 9, 14, 15, 16, 12, 968, DateTimeKind.Local).AddTicks(7292),
+                            Description = "Boğaziçi Üniversitesi Bilgisayar Mühendisliği mezunu, aynı üniversitede Endüstri Mühendisliği Doktorası yapan, ÖSS Matematik Kitapları Yazarı, eski İTÜ Öğretim Görevlisinden, YKS sınavlarına yönelik veya takviye amaçlı Matematik, Geometri, Fizik, Kimya, İngilizce, SAT Mathematics, AP Calculus, AP Physics, AP Statistics, IB Mathematics, IB Physics vb. dersleri verilir Ayrıca, üniversite öğrencilerine/mezunlarına yönelik KPSS Matematik, ALES Matematik, GRE/GMAT Mathematics, Calculus, Differential Equations, Discrete Mathematics, University Physics, Operations Research, Probability, Statistics, Mathematical Statistics, Econometrics, SAS, SPSS, Linear Algebra, C, C++, C#.NET, Java vb. dersleri  (Çevrimiçi/Öğrencinin Evi/Hocanın Evi) verilir...",
                             Gender = "Male",
                             ImageUrl = "https://krtknadmn.karatekin.edu.tr/files/karatekin/yl/a.jpg",
                             Majority = "math",
                             Name = "ODTÜ mezunu hocalardan özel ders ve üniversite sınav yardımı",
+                            PhoneNumber = "05070198810",
                             Price = 2332m
                         },
                         new
                         {
                             Id = 5,
-                            Date = new DateTime(2023, 9, 10, 16, 46, 55, 334, DateTimeKind.Local).AddTicks(942),
+                            Date = new DateTime(2023, 9, 14, 15, 16, 12, 968, DateTimeKind.Local).AddTicks(7293),
+                            Description = "Boğaziçi Üniversitesi Bilgisayar Mühendisliği mezunu, aynı üniversitede Endüstri Mühendisliği Doktorası yapan, ÖSS Matematik Kitapları Yazarı, eski İTÜ Öğretim Görevlisinden, YKS sınavlarına yönelik veya takviye amaçlı Matematik, Geometri, Fizik, Kimya, İngilizce, SAT Mathematics, AP Calculus, AP Physics, AP Statistics, IB Mathematics, IB Physics vb. dersleri verilir Ayrıca, üniversite öğrencilerine/mezunlarına yönelik KPSS Matematik, ALES Matematik, GRE/GMAT Mathematics, Calculus, Differential Equations, Discrete Mathematics, University Physics, Operations Research, Probability, Statistics, Mathematical Statistics, Econometrics, SAS, SPSS, Linear Algebra, C, C++, C#.NET, Java vb. dersleri  (Çevrimiçi/Öğrencinin Evi/Hocanın Evi) verilir...",
                             Gender = "Male",
                             ImageUrl = "https://krtknadmn.karatekin.edu.tr/files/karatekin/yl/a.jpg",
                             Majority = "math",
                             Name = "Matemmatik öedv yardımı",
+                            PhoneNumber = "05070198810",
                             Price = 2000232m
                         },
                         new
                         {
                             Id = 6,
-                            Date = new DateTime(2023, 9, 10, 16, 46, 55, 334, DateTimeKind.Local).AddTicks(944),
+                            Date = new DateTime(2023, 9, 14, 15, 16, 12, 968, DateTimeKind.Local).AddTicks(7295),
+                            Description = "Boğaziçi Üniversitesi Bilgisayar Mühendisliği mezunu, aynı üniversitede Endüstri Mühendisliği Doktorası yapan, ÖSS Matematik Kitapları Yazarı, eski İTÜ Öğretim Görevlisinden, YKS sınavlarına yönelik veya takviye amaçlı Matematik, Geometri, Fizik, Kimya, İngilizce, SAT Mathematics, AP Calculus, AP Physics, AP Statistics, IB Mathematics, IB Physics vb. dersleri verilir Ayrıca, üniversite öğrencilerine/mezunlarına yönelik KPSS Matematik, ALES Matematik, GRE/GMAT Mathematics, Calculus, Differential Equations, Discrete Mathematics, University Physics, Operations Research, Probability, Statistics, Mathematical Statistics, Econometrics, SAS, SPSS, Linear Algebra, C, C++, C#.NET, Java vb. dersleri  (Çevrimiçi/Öğrencinin Evi/Hocanın Evi) verilir...",
                             Gender = "Female",
                             ImageUrl = "https://krtknadmn.karatekin.edu.tr/files/karatekin/yl/a.jpg",
                             Majority = "math",
                             Name = "Fizik ödev",
+                            PhoneNumber = "05070198810",
                             Price = 202300m
                         },
                         new
                         {
                             Id = 7,
-                            Date = new DateTime(2023, 9, 10, 16, 46, 55, 334, DateTimeKind.Local).AddTicks(946),
+                            Date = new DateTime(2023, 9, 14, 15, 16, 12, 968, DateTimeKind.Local).AddTicks(7296),
+                            Description = "Boğaziçi Üniversitesi Bilgisayar Mühendisliği mezunu, aynı üniversitede Endüstri Mühendisliği Doktorası yapan, ÖSS Matematik Kitapları Yazarı, eski İTÜ Öğretim Görevlisinden, YKS sınavlarına yönelik veya takviye amaçlı Matematik, Geometri, Fizik, Kimya, İngilizce, SAT Mathematics, AP Calculus, AP Physics, AP Statistics, IB Mathematics, IB Physics vb. dersleri verilir Ayrıca, üniversite öğrencilerine/mezunlarına yönelik KPSS Matematik, ALES Matematik, GRE/GMAT Mathematics, Calculus, Differential Equations, Discrete Mathematics, University Physics, Operations Research, Probability, Statistics, Mathematical Statistics, Econometrics, SAS, SPSS, Linear Algebra, C, C++, C#.NET, Java vb. dersleri  (Çevrimiçi/Öğrencinin Evi/Hocanın Evi) verilir...",
                             Gender = "Female",
                             ImageUrl = "https://krtknadmn.karatekin.edu.tr/files/karatekin/yl/a.jpg",
                             Majority = "math",
                             Name = "MAtematik Master",
+                            PhoneNumber = "05070198810",
                             Price = 203200m
                         });
                 });

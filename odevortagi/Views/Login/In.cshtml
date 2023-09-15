@@ -210,8 +210,17 @@
             </div>
             <div class="pass-txt"><a href="#">Forgot password?</a></div>
             <input type="submit" value="Login">
+            <dnt-captcha asp-captcha-generator-display-mode="ShowDigits" asp-captcha-generator-max="999999"
+                asp-captcha-generator-min="111111" asp-captcha-generator-language="English" asp-use-relative-urls="true"
+                asp-placeholder="Enter Captcha" asp-validation-error-message="Please Enter Security Mode"
+                asp-font-name="Tahoma" asp-font-size="20" asp-fore-color="#333333" asp-back-color="#ccc"
+                asp-text-box-class="text-box form-control"
+                asp-text-box-template="<span class='input-group-prepend'<span class='form-group-text'></span></span>{0}"
+                asp-validation-message-class="text-danger" asp-refresh-button-class="fas fa-redo btn-sm"
+                asp-use-noise="false"
+                ></dnt-captcha>
         </form>
-        <div class="sign-txt">Not yet member? <a href="#">Signup now</a></div>
+        <div class="sign-txt">Not yet member? <a asp-controller="Login" asp-action="Up">Signup now</a></div>
     </div>
 
     <script src="script.js"></script>

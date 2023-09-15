@@ -17,5 +17,9 @@ namespace Entity
         [Required]
         public DateTime Date { get; set; } = DateTime.Now;
         public string? Gender { get; set; }
+        [Required]
+        public string PhoneNumber { get; set; }
+        [Required]
+        public string Description { get; set; }
     }
 }

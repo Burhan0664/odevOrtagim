@@ -20,14 +20,17 @@ namespace Controllers
         [AllowAnonymous]
         public IActionResult TeacherAd(Teacher teacher){
             
-            if (!string.IsNullOrEmpty(teacher.Name)&&teacher.Price!=null&&!string.IsNullOrEmpty(teacher.ImageUrl)&&!string.IsNullOrEmpty(teacher.Majority))
+            if (!string.IsNullOrEmpty(teacher.Description)&&!string.IsNullOrEmpty(teacher.PhoneNumber)&&!string.IsNullOrEmpty(teacher.Name)
+            &&teacher.Price!=null&&!string.IsNullOrEmpty(teacher.ImageUrl)&&!string.IsNullOrEmpty(teacher.Majority))
             {
                 Teacher teacher1 = new Teacher(){
                     Name=teacher.Name,
                     ImageUrl=teacher.ImageUrl,
                     Price=teacher.Price,
                     Gender=teacher.Gender,
-                    Majority = teacher.Majority
+                    Majority = teacher.Majority,
+                    PhoneNumber = teacher.PhoneNumber,
+                    Description = teacher.Description
 
                 };
                 _teacherRepository.Create(teacher1);
@@ -38,14 +41,17 @@ namespace Controllers
         }
         [AllowAnonymous]
         public IActionResult StudentAd(Student student){
-              if (!string.IsNullOrEmpty(student.Name)&&student.Price!=null&&!string.IsNullOrEmpty(student.ImageUrl)&&!string.IsNullOrEmpty(student.Majority))
+              if (!string.IsNullOrEmpty(student.Description)&&!string.IsNullOrEmpty(student.PhoneNumber)&&!string.IsNullOrEmpty(student.Name)
+              &&student.Price!=null&&!string.IsNullOrEmpty(student.ImageUrl)&&!string.IsNullOrEmpty(student.Majority))
             {
                 Student student1 = new Student(){
                     Name=student.Name,
                     ImageUrl=student.ImageUrl,
                     Price=student.Price,
                     Gender=student.Gender,
-                    Majority = student.Majority
+                    Majority = student.Majority,
+                    PhoneNumber =student.PhoneNumber,
+                    Description = student.Description
 
                 };
                 _studentRepository.Create(student1);

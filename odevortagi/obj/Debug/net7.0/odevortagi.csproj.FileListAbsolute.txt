@@ -78,3 +78,16 @@ C:\Users\burha\OneDrive\Masaüstü\coder\ÖdevOrtağım\odevortagi\bin\Debug\net
 C:\Users\burha\OneDrive\Masaüstü\coder\ÖdevOrtağım\odevortagi\bin\Debug\net7.0\Microsoft.Extensions.Identity.Core.dll
 C:\Users\burha\OneDrive\Masaüstü\coder\ÖdevOrtağım\odevortagi\bin\Debug\net7.0\Microsoft.Extensions.Identity.Stores.dll
 C:\Users\burha\OneDrive\Masaüstü\coder\ÖdevOrtağım\odevortagi\bin\Debug\net7.0\Microsoft.Extensions.Options.dll
+C:\Users\burha\OneDrive\Masaüstü\coder\ÖdevOrtağım\odevortagi\bin\Debug\net7.0\DNTCaptcha.Core.dll
+C:\Users\burha\OneDrive\Masaüstü\coder\ÖdevOrtağım\odevortagi\bin\Debug\net7.0\HarfBuzzSharp.dll
+C:\Users\burha\OneDrive\Masaüstü\coder\ÖdevOrtağım\odevortagi\bin\Debug\net7.0\SkiaSharp.dll
+C:\Users\burha\OneDrive\Masaüstü\coder\ÖdevOrtağım\odevortagi\bin\Debug\net7.0\SkiaSharp.HarfBuzz.dll
+C:\Users\burha\OneDrive\Masaüstü\coder\ÖdevOrtağım\odevortagi\bin\Debug\net7.0\runtimes\osx\native\libHarfBuzzSharp.dylib
+C:\Users\burha\OneDrive\Masaüstü\coder\ÖdevOrtağım\odevortagi\bin\Debug\net7.0\runtimes\win-arm64\native\libHarfBuzzSharp.dll
+C:\Users\burha\OneDrive\Masaüstü\coder\ÖdevOrtağım\odevortagi\bin\Debug\net7.0\runtimes\win-x64\native\libHarfBuzzSharp.dll
+C:\Users\burha\OneDrive\Masaüstü\coder\ÖdevOrtağım\odevortagi\bin\Debug\net7.0\runtimes\win-x86\native\libHarfBuzzSharp.dll
+C:\Users\burha\OneDrive\Masaüstü\coder\ÖdevOrtağım\odevortagi\bin\Debug\net7.0\runtimes\osx\native\libSkiaSharp.dylib
+C:\Users\burha\OneDrive\Masaüstü\coder\ÖdevOrtağım\odevortagi\bin\Debug\net7.0\runtimes\win-arm64\native\libSkiaSharp.dll
+C:\Users\burha\OneDrive\Masaüstü\coder\ÖdevOrtağım\odevortagi\bin\Debug\net7.0\runtimes\win-x64\native\libSkiaSharp.dll
+C:\Users\burha\OneDrive\Masaüstü\coder\ÖdevOrtağım\odevortagi\bin\Debug\net7.0\runtimes\win-x86\native\libSkiaSharp.dll
+C:\Users\burha\OneDrive\Masaüstü\coder\ÖdevOrtağım\odevortagi\obj\Debug\net7.0\odevortagi.MvcApplicationPartsAssemblyInfo.cs

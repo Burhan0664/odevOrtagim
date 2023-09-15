@@ -1,0 +1,42 @@
+<form method="post">
+    <div class="container my-5">
+        <div asp-validation-summary="All" class="text-danger"></div>
+
+        <div class="row my-3">
+            <div class="col-2 ">
+                <label>Adınız Soyadınız</label>
+            </div>
+            <div class="col ">
+                <input type="text" name="Name">
+            </div>
+        </div>
+        <div class="row my-3">
+            <div class="col-2 ">
+                <label>E-Posta Adresiniz</label>
+            </div>
+            <div class="col ">
+                <input type="text" name="Eposta">
+            </div>
+        </div>
+         <div class="row my-3">
+            <div class="col-2 ">
+                <label>Konu Başlığı</label>
+            </div>
+            <div class="col ">
+                <input type="text" name="subject">
+            </div>
+        </div>
+         <div class="row my-3">
+            <div class="col-2 ">
+                <label>Mesajınız</label>
+            </div>
+            <div class="col ">
+                <textarea rows="5" cols="100%"name="message"></textarea>
+            </div>
+        </div>
+        </div>
+        <div class="row my-3 d-flex justify-content-center col-8 ">
+            <input class="btn btn-success btn-lg" type="submit">
+        </div>
+    </div>
+</form>

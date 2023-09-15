@@ -1,5 +1,6 @@
 using Abstract;
 using Concrete;
+using DNTCaptcha.Core;
 using Identity;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -51,13 +52,13 @@ namespace odevortagi
                     Name = "Burhan"
                 };
             });
-
+            services.AddTransient<IEmailSender, EmailSender>();
             services.AddScoped<IStudentService, StudentManager>();
             services.AddScoped<ITeacherService, TeacherManager>();
             services.AddScoped<ITeacherRepository, TeacherRepository>();
             services.AddScoped<IStudentRepository, StudentRepository>();
             services.AddScoped<ShopContext>();
-
+            services.AddDNTCaptcha(options =>options.UseCookieStorageProvider().ShowThousandsSeparators(false).WithEncryptionKey("123456"));
             services.AddControllersWithViews();
         }
 

@@ -18,6 +18,10 @@ namespace Entity
         public DateTime Date { get; set; } =DateTime.Now;
          [Required]
         public string Gender { get; set; }
+        [Required]
+        public string PhoneNumber { get; set; }
+        [Required]
+        public string Description { get; set; }
 
     }
 }

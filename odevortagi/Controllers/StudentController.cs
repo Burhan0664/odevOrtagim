@@ -87,7 +87,9 @@ namespace Controllers
 
             return View(productListViewModel);
         }
-
+        public IActionResult Details(int Id){
+           return View(_studentRepository.GetById(Id));
+        }
 
 
     }

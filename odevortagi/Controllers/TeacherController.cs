@@ -85,6 +85,9 @@ namespace Controllers
             return View(teacherListViewModel);
 
         }
+        public IActionResult Details(int Id){
+            return View(_teacherRepository.GetById(Id));
+        }
 
 
     }

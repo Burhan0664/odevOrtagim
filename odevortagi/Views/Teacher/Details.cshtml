@@ -1,0 +1,84 @@
+@model Teacher
+
+<style>
+    .column {
+        border-color: white;
+        border-style: solid;
+        position: relative;
+        margin-top: 2em;
+        background-color: rgb(240, 246, 255);
+    }
+
+    .img {
+        position: relative;
+        height: 5em;
+    }
+
+    .columg {
+        position: relative;
+        margin-top: 2em;
+        text-align: center;
+    }
+
+    .colum {
+        border-color: white;
+        border-style: solid;
+        position: relative;
+        margin-top: 2em;
+        background-color: rgb(233, 233, 233);
+    }
+</style>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-4">
+            <ul class="list-group">
+                <a asp-controller="Home" asp-action="Index">
+                    <li class="list-group-item list-group-item-action m-lg-1">Home</li>
+                </a>
+                <a asp-action="Index" asp-controller="Teacher">
+                    <li class="list-group-item list-group-item-action m-lg-1">Teachers</li>
+                </a>
+                <a asp-controller="Student" asp-action="Index">
+                    <li class="list-group-item list-group-item-action m-lg-1">Exams</li>
+                </a>
+                @if (User.Identity.IsAuthenticated)
+                {
+                    <a asp-controller="Advert" asp-action="TeacherAd">
+                        <li class="list-group-item list-group-item-action m-lg-1 bg-danger">Create An Teacher Advert</li>
+                    </a>
+                }
+            </ul>
+            <img class="mt-5" src="https://www.ucarecdn.com/e9acae8c-c140-43e5-8084-d9aecf189f94/-/resize/700x/"
+                style="width: 30em;" alt="img">
+
+        </div>
+        <div class="col 2 my-5">
+            <h1 class="text-center"> @Model.Name</h1>
+            <div class="d-flex justify-content-between">
+                <img src="@Model.ImageUrl" alt="img" style="width: 50%;">
+                <ul class="list-group">
+                    <li class="list-group-item list-group-item-info">Price</li>
+                    <li class="list-group-item list-group-item-info">Date Time</li>
+                    <li class="list-group-item list-group-item-info">Majority</li>
+                    <li class="list-group-item list-group-item-info">Gender</li>
+                    <li class="list-group-item list-group-item-info">Phone Number</li>
+
+                </ul>
+                <ul class="list-group">
+                    <li class="list-group-item">@Model.Price</li>
+                    <li class="list-group-item">@Model.Date</li>
+                    <li class="list-group-item">@Model.Majority</li>
+                    <li class="list-group-item">@Model.Gender</li>
+                    <li class="list-group-item">@Model.PhoneNumber</li>
+
+                </ul>
+            </div>
+            <div>
+                <h6>Description</h6>
+                <p style="border-style: solid;" class="font-weight-bold">@Model.Description</p>
+            </div>
+        </div>
+
+
+    </div>

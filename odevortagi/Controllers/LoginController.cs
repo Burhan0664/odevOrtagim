@@ -1,10 +1,13 @@
 ﻿using System;
+using DNTCaptcha.Core;
+using Humanizer.DateTimeHumanizeStrategy;
 using Identity;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using Microsoft.EntityFrameworkCore.Query;
+using Microsoft.Extensions.Options;
 using Models;
 
 namespace Controllers
@@ -12,12 +15,16 @@ namespace Controllers
 
     public class LoginController : Controller
     {
+        private readonly IDNTCaptchaValidatorService _validatorservice;
+        private readonly DNTCaptchaOptions _captchaOptions;
         private UserManager<User> _userManager;
         private SignInManager<User> _signInManager;
-        public LoginController(UserManager<User> userManager, SignInManager<User> signInManager)
+        public LoginController(IDNTCaptchaValidatorService dNTCaptchaValidatorService, IOptions<DNTCaptchaOptions> options, UserManager<User> userManager, SignInManager<User> signInManager)
         {
             this._userManager = userManager;
             this._signInManager = signInManager;
+            this._captchaOptions = options == null ? throw new ArgumentNullException(nameof(options)) : options.Value;
+            this._validatorservice = dNTCaptchaValidatorService;
         }
         public IActionResult In()
         {
@@ -44,25 +51,37 @@ namespace Controllers
 
         }
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public async Task<IActionResult> In(LoginModel model)
         {
             if (!ModelState.IsValid)
             {
                 return View(model);
             }
-            var user = await _userManager.FindByEmailAsync(model.Email);
-            if (user == null)
+            else
             {
-                ModelState.AddModelError("", "Bu kullanıcı bulunamadı");
+                if (_validatorservice.HasRequestValidCaptchaEntry())
+                {
+                    var user = await _userManager.FindByEmailAsync(model.Email);
+                    if (user == null)
+                    {
+                        ModelState.AddModelError("", "Bu kullanıcı bulunamadı");
+                        return View(model);
+                    }
+                    var result = await _signInManager.PasswordSignInAsync(user, model.Password, false, false);
+                    if (result.Succeeded)
+                    {
+                        return RedirectToAction("Index", "Home");
+                    }
+                    ModelState.AddModelError("", "Şifreyi Yanlış Girdiniz");
+                    return View(model);
+                }
+                this.ModelState.AddModelError(_captchaOptions.CaptchaComponent.CaptchaInputName, "Please Enter Valid Captcha");
+
                 return View(model);
+
             }
-            var result = await _signInManager.PasswordSignInAsync(user, model.Password, false, false);
-            if (result.Succeeded)
-            {
-                return RedirectToAction("Index", "Home");
-            }
-            ModelState.AddModelError("", "Şifreyi Yanlış Girdiniz");
-            return View(model);
+
         }
         [HttpPost]
 

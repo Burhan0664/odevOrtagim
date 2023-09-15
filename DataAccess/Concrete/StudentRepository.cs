@@ -53,7 +53,7 @@ namespace Concrete
         public IQueryable<Student> GetByFilter(int min_price, int max_price, string Gender)
         {
             
-                var products = _context.Students.Where(p => p.Gender == Gender && p.Price >= min_price && p.Price <= max_price).AsQueryable();
+                var products = _context.Students.Where(p => p.Gender == Gender ||p.Gender==null||Gender=="Double"&& p.Price >= min_price && p.Price <= max_price).AsQueryable();
                 return products;
             
         }
