@@ -13,7 +13,7 @@ Welcome to **OdevOrtagim**, an innovative platform designed to bridge the gap be
 
 ---
 
-## 🚀 Features  
+##  Features  
 
 - **Student-Teacher Interaction:**  
   - Students can connect with teachers for personalized homework assistance.  
@@ -37,7 +37,7 @@ Welcome to **OdevOrtagim**, an innovative platform designed to bridge the gap be
 
 ---
 
-## 🛠️ Technologies Used  
+##  Technologies Used  
 
 ### Backend  
 - **ASP.NET Core & Entity Framework Core:** Backend logic with ORM for SQLite database integration.  
@@ -53,5 +53,4 @@ Welcome to **OdevOrtagim**, an innovative platform designed to bridge the gap be
 
 ---
 
-## 📂 Project Structure  
 
